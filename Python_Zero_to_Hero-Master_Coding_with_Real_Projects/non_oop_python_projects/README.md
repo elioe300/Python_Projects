@@ -138,7 +138,7 @@ bulk_rename('ruta/al/directorio', 'prefijo', '.txt')
 
 ---
 
-# [8. CPU RAM Monitor](./CPU_RAM_monitor.py)
+## [8. CPU RAM Monitor](./CPU_RAM_monitor.py)
 
 ### Descripción
 Este script monitorea el uso del CPU y la RAM, y envía notificaciones si los valores superan ciertos umbrales.
@@ -155,7 +155,7 @@ Este script monitorea el uso del CPU y la RAM, y envía notificaciones si los va
 
 ---
 
-# [9. Data Entry Automator](./data_entry_automator.py)
+## [9. Data Entry Automator](./data_entry_automator.py)
 
 ### Descripción
 Este script automatiza la entrada de datos y la creación/actualización de un archivo CSV.
@@ -177,7 +177,7 @@ Este script automatiza la entrada de datos y la creación/actualización de un a
 
 ---
 
-# [10. Data Guardian](./data_guardian.py)
+## [10. Data Guardian](./data_guardian.py)
 
 ### Descripción
 Este script copia archivos y subdirectorios desde el directorio de origen al directorio de respaldo y elimina archivos obsoletos en el directorio de respaldo.
@@ -198,7 +198,7 @@ Este script copia archivos y subdirectorios desde el directorio de origen al dir
 
 ---
 
-# [11. FASTA Information Slicer](./fasta_information_slicer.py)
+## [11. FASTA Information Slicer](./fasta_information_slicer.py)
 
 ### Descripción
 Este script procesa un archivo FASTA y extrae información sobre identificadores y sus secuencias.
@@ -218,7 +218,7 @@ Este script procesa un archivo FASTA y extrae información sobre identificadores
 
 ---
 
-# [12. File Renamer](./file_renamer.py)
+## [12. File Renamer](./file_renamer.py)
 
 ### Descripción
 Este script renombra archivos en un directorio especificado usando un prefijo y un índice numerado.
@@ -235,7 +235,7 @@ Este script renombra archivos en un directorio especificado usando un prefijo y 
 
 ---
 
-# [13. Folder Refiner](./folder_refiner.py)
+## [13. Folder Refiner](./folder_refiner.py)
 
 ### Descripción
 Este script elimina archivos con extensiones específicas en un directorio dado.
@@ -253,7 +253,7 @@ Este script elimina archivos con extensiones específicas en un directorio dado.
 
 ---
 
-# [14. PDF Text Grabber](./PDFTextGrabber.py)
+## [14. PDF Text Grabber](./PDFTextGrabber.py)
 
 ### Descripción
 Este script extrae el texto de páginas específicas de archivos PDF.
@@ -275,7 +275,7 @@ Este script extrae el texto de páginas específicas de archivos PDF.
 
 ---
 
-# [15. Pomodoro Timer](./pomodoro_timer.py)
+## [15. Pomodoro Timer](./pomodoro_timer.py)
 
 ### Descripción
 Este script ejecuta el ciclo de estudio Pomodoro durante 25 minutos y el ciclo de descanso durante 5 minutos, enviando notificaciones al inicio y al final de cada ciclo.
@@ -300,7 +300,7 @@ Este script ejecuta el ciclo de estudio Pomodoro durante 25 minutos y el ciclo d
   
 ---
 
-# [16. Random Guessing Game](./random_guessing_game.py)
+## [16. Random Guessing Game](./random_guessing_game.py)
 
 ### Descripción
 Este script inicia un juego de adivinanza de números. El programa genera un número aleatorio y el usuario debe adivinarlo en el menor número de intentos posibles.
