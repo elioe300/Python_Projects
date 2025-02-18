@@ -148,6 +148,7 @@ Este script monitorea el uso del CPU y la RAM, y envía notificaciones si los va
 ### Funciones principales
 
 - **monitor_system_usage()**: Monitorea continuamente el uso del CPU y la RAM, enviando notificaciones si los valores superan ciertos umbrales.
+- 
   ```python
   monitor_system_usage()
   ```
@@ -163,10 +164,8 @@ Este script automatiza la entrada de datos y la creación/actualización de un a
 
 ### Funciones principales
 
-### Función: data_entry_automator
-
-#### Descripción
 - **data_entry_automator(input_file, output_csv)**: Convierte datos de entrada en un DataFrame de pandas y los guarda/concatena en un archivo CSV.
+- 
   ```python
   data_to_enter = [
       {"name": "Alice", "age": 30, "city": "New York"},
@@ -192,6 +191,7 @@ Este script copia archivos y subdirectorios desde el directorio de origen al dir
 - **clean_archives(source_rute, backup_rute)**: Elimina archivos en el directorio de respaldo que ya no existen en el directorio de origen.
 
 - **backup_and_sync(source_rute, backup_rute)**: Realiza una copia de seguridad y sincronización de archivos entre dos directorios.
+  
   ```python
   backup_and_sync('ruta/al/directorio/origen', 'ruta/al/directorio/respaldo')
   ```
@@ -210,6 +210,7 @@ Este script procesa un archivo FASTA y extrae información sobre identificadores
 - **fasta_info_slicer(fasta_file)**: Procesa un archivo FASTA y extrae información sobre identificadores y secuencias.
 
 - **iterator(directory)**: Itera sobre los archivos en un directorio dado y procesa los archivos FASTA encontrados.
+  
   ```python
   resultado = iterator('ruta/al/directorio')
   print(resultado)
@@ -227,6 +228,7 @@ Este script renombra archivos en un directorio especificado usando un prefijo y 
 ### Funciones principales
 
 - **file_rename(folder_path, prefix, extension)**: Renombra archivos en un directorio dado con un prefijo y un índice numerado.
+  
   ```python
   file_rename('ruta/al/directorio', 'prefijo', 'txt')
   ```
@@ -243,6 +245,7 @@ Este script elimina archivos con extensiones específicas en un directorio dado.
 ### Funciones principales
 
 - **folder_refiner(folder_path, extension)**: Elimina archivos con extensiones específicas en un directorio dado.
+  
   ```python
   folder_refiner('ruta/al/directorio', '.txt')
   folder_refiner('ruta/al/directorio', ['.txt', '.log'])
@@ -264,6 +267,7 @@ Este script extrae el texto de páginas específicas de archivos PDF.
 - **show_page_count(pdf_path)**: Muestra el número de páginas de un archivo PDF.
  
 - **PDFTextGrabber()**: Interactúa con el usuario y extrae texto de un archivo PDF.
+  
   ```python
   if __name__ == "__main__":
       PDFTextGrabber()
@@ -285,6 +289,7 @@ Este script ejecuta el ciclo de estudio Pomodoro durante 25 minutos y el ciclo d
 - **rest_timer()**: Ejecuta el ciclo de descanso durante 5 minutos y envía una notificación al inicio y al final del ciclo.
 - 
 - **main**: Pregunta al usuario la cantidad de ciclos Pomodoro que quiere realizar y ejecuta los ciclos de estudio y descanso.
+  
   ```python
   if __name__ == "__main__":
       cycles = int(input("Introduzca la cantidad de ciclos pomodoro que quiera realizar: "))
@@ -305,6 +310,7 @@ Este script inicia un juego de adivinanza de números. El programa genera un nú
 ### Funciones principales
 
 - **random_guessing_game()**: Inicia un juego de adivinanza de números. El usuario debe adivinar el número generado por el programa.
+
   ```python
   random_guessing_game()
   ```
