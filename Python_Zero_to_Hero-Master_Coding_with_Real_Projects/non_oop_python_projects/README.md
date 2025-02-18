@@ -287,7 +287,7 @@ Este script ejecuta el ciclo de estudio Pomodoro durante 25 minutos y el ciclo d
 - **pomodoro_timer()**: Ejecuta el ciclo de estudio Pomodoro durante 25 minutos y envía una notificación al inicio y al final del ciclo.
 
 - **rest_timer()**: Ejecuta el ciclo de descanso durante 5 minutos y envía una notificación al inicio y al final del ciclo.
-- 
+
 - **main**: Pregunta al usuario la cantidad de ciclos Pomodoro que quiere realizar y ejecuta los ciclos de estudio y descanso.
   
   ```python
