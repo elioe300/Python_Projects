@@ -1,7 +1,5 @@
 # Python Projects  
 
----
-
 ## Introducción  
 Bienvenidos a **Python_Projects**, un repositorio donde recopilo todos los proyectos que he desarrollado a lo largo de mi aprendizaje en **Python**.  
 
