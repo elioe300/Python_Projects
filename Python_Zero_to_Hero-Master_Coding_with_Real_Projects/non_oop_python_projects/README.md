@@ -126,46 +126,6 @@ bulk_rename('ruta/al/directorio', 'prefijo', '.txt')
 
 ---
 
-# [8. Acronymizer](./acronymizer.py)
-
-## Visión General
-Este script transforma una frase dada por el usuario en un acrónimo.
-
----
-
-## Funciones
-
-### Función: acronymizer
-
-#### Descripción
-- **acronymizer**: Transforma una frase en un acrónimo tomando la primera letra de cada palabra y convirtiéndola en mayúscula.
-  ```python
-  acronimo = acronymizer("National Aeronautics Space Administration")
-  print(acronimo)  # Output: NASA
-  ```
-
----
-
-# [9. BMI Tracker](./bmi_tracker.py)
-
-## Visión General
-Este script calcula el Índice de Masa Corporal (BMI) basado en la altura y el peso proporcionados por el usuario.
-
----
-
-## Funciones
-
-### Función: bmi_tracker
-
-#### Descripción
-- **bmi_tracker**: Calcula el BMI e interpreta el resultado basado en los valores ingresados.
-  ```python
-  resultado_bmi = bmi_tracker()
-  print(resultado_bmi)  # Output: Interpretación del BMI (por ejemplo, "El usuario está bajo de peso.")
-  ```
-
----
-
 # [10. CPU RAM Monitor](./CPU_RAM_monitor.py)
 
 ## Visión General
