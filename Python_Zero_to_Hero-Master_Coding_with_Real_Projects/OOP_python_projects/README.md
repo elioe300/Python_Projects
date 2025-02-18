@@ -35,10 +35,13 @@ Representa la biblioteca con un sistema de préstamos y devoluciones.
 
 #### **Función `menu()`**  
 Permite la interacción del usuario con la biblioteca, incluyendo:  
-1. Creación de cuenta.  
-2. Acceso a una cuenta existente.  
-3. Préstamo y devolución de libros.  
-4. Consulta de inventario.  
+1. Creación de cuenta.
+2. Acceso a una cuenta existente.
+3. Depósito y préstamo de libros.
+4. Consulta del historial de transacciones.
+5. Visualización del inventario de la biblioteca.
+6. Visualización de libros prestados.
+7. Salida de la cuenta y del sistema de la biblioteca.
 
 ---
 
@@ -80,9 +83,11 @@ Administra múltiples cuentas bancarias.
 
 #### **Función `menu()`**  
 Permite la interacción del usuario con el banco, incluyendo:  
-1. Creación de cuenta.  
-2. Acceso a una cuenta existente.  
-3. Depósitos y retiros.  
-4. Consulta de saldo.
+1. Creación de cuenta.
+2. Acceso a una cuenta existente.
+3. Depósito y retiro de dinero.
+4. Consulta del historial de transacciones.
+5. Visualización del saldo.
+6. Salida del sistema.
 
  ---
