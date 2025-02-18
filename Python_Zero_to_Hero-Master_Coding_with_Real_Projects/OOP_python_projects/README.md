@@ -40,14 +40,6 @@ Permite la interacción del usuario con la biblioteca, incluyendo:
 3. Préstamo y devolución de libros.  
 4. Consulta de inventario.  
 
-### Ejemplo de Uso  
-```python
-library = Library()
-library.create_account("Juan")
-library.withdrawal("1984", "Juan")
-library.deposit("1984", "Juan")
-library.display_transactions("Juan")
-````
 ---
 
 ## [2. Sistema Bancario](./sistema_bancario.py)
@@ -91,17 +83,6 @@ Permite la interacción del usuario con el banco, incluyendo:
 1. Creación de cuenta.  
 2. Acceso a una cuenta existente.  
 3. Depósitos y retiros.  
-4. Consulta de saldo.  
+4. Consulta de saldo.
 
-### Ejemplo de Uso  
-```python
-bank = Bank()
-bank.create_account(12345, "Ana", 500)
-account = bank.get_account(12345)
-account.deposit(200)
-account.withdraw(100)
-account.display_transactions()
-account.display_balance()
-```
-
----
+ ---
