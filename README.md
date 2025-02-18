@@ -5,8 +5,6 @@ Bienvenidos a **Python_Projects**, un repositorio donde recopilo todos los proye
 
 Cada proyecto está organizado en directorios según su propósito y temática, permitiendo una navegación clara y estructurada.  
 
----
-
 ## Estructura del Repositorio  
 
 Actualmente, el repositorio contiene el siguiente directorio principal:  
