@@ -4,7 +4,7 @@ Este documento proporciona una descripción detallada de dos proyectos desarroll
 
 ---
 
-## 1. [Sistema de Biblioteca](./biblioteca.py) 
+## [1. Sistema de Biblioteca](./biblioteca.py) 
 
 ### Descripción  
 Este proyecto simula el funcionamiento de una biblioteca, permitiendo a los usuarios **retirar y devolver libros**, así como gestionar cuentas y transacciones.  
@@ -50,7 +50,7 @@ library.display_transactions("Juan")
 ````
 ---
 
-## 2. [Sistema Bancario](./sistema_bancario.py)
+## [2. Sistema Bancario](./sistema_bancario.py)
 
 ### Descripción  
 Este proyecto simula un sistema bancario en Python, donde los usuarios pueden **crear cuentas, realizar depósitos y retiros, y consultar su historial de transacciones**.  
