@@ -10,7 +10,7 @@ Cada proyecto está organizado en directorios según su propósito y temática, 
 Actualmente, el repositorio contiene el siguiente directorio principal:  
 
 ### [Python_Zero_to_Hero-Master_Coding_with_Real_Projects](./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/)  
-Este directorio agrupa proyectos desarrollados como parte de mi formación en Python, siguiendo un enfoque práctico basado en proyectos reales.  
+Este directorio agrupa proyectos desarrollados creados durante mi formación en Python el curso [Python_Zero_to_Hero-Master_Coding_with_Real_Projects](https://www.udemy.com/course/python-project-masterclass/), siguiendo un enfoque práctico basado en proyectos reales.  
 
 Dentro de este directorio, los proyectos se dividen en:  
 
@@ -28,6 +28,6 @@ Dentro de este directorio, los proyectos se dividen en:
 
 ## Contacto  
 
-Si deseas ponerte en contacto conmigo, puedes encontrarme en LinkedIn o GitHub.  
+Si deseas ponerte en contacto conmigo, puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/elias-korchi-meziani-4131b121b/) o GitHub.  
 
 ---
