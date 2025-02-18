@@ -23,7 +23,7 @@ menu() # Inicia la aplicación interactiva en CLI
 
 ---
 
-## [2. File Synchronizer with Change Log](./file_synchornizer_with_change_log.py)
+## [2. File Synchronizer with Change Log](./file_synchronizer_with_change_log.py)
 
 ### Descripción
 Este proyecto permite sincronizar archivos entre dos carpetas, manteniendo un registro de los cambios en un archivo log.
