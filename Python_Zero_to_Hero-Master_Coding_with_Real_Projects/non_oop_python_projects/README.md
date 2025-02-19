@@ -67,7 +67,7 @@ ID_finder("NM_001301717", "C:\\ruta\\descargas")
 ## [4. Bioinformatic Archive Organizer](./bioinformatic_archive_organizer.py)
 
 ### Descripción
-Organiza archivos en carpetas según su extensión dentro de un directorio.
+Este script organiza los archivos dentro de un directorio indicado en la entrada por la(s) ruta(s) de salida y extensión que desee el usuario.
 
 ---
 
