@@ -17,7 +17,7 @@ Dentro de este directorio, los proyectos se dividen en:
 - **[non_oop_python_projects](./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/non_oop_python_projects/)**:  
   Proyectos que siguen un enfoque procedural sin el uso de Programación Orientada a Objetos (OOP).  
 
-- **[oop_python_projects](./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/oop_python_projects/)**:  
+- **[oop_python_projects](./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/OOP_python_projects/)**:  
   Proyectos que aplican principios de Programación Orientada a Objetos para mejorar la modularidad y reutilización del código.  
 
 ## Cómo Usar Este Repositorio  
