@@ -28,11 +28,19 @@ optional arguments:
 El archivo `transcribe_dna.py` acepta como input:
 
 1. **Uno o más archivos de ADN (argumento(s) posicional(es))**
+```sh
+$ cat tests/inputs/input1.txt
+GATGGAACTTGACTACGTAAATT
+```
 2. **Directorio de salida opcional (argumento opcional)**
+```sh
+$ GATGGAACTTGACTACGTAAATT
+```
+
 
 ## Salida del Programa
 
-El programa debe imprimir un mensaje indicando cuántas secuencias se han transcrito y cuántos archivos de salida se han creado en el directorio especificado:
+El directorio de salida predeterminado es "out". El programa debe imprimir un mensaje indicando cuántas secuencias se han transcrito y cuántos archivos de salida se han creado en el directorio especificado:
 
 ```sh
 $ ./transcribe_dna.py -o rna_out input1.txt input2.txt
