@@ -8,13 +8,13 @@ import os
 from functools import reduce
 from typing import NamedTuple, List
 
-class CommandLineArgs(NamedTuple):
+class Args(NamedTuple):
     """Command-line arguments"""
     protein_sequence: str
     modulo: int
 
 # --------------------------------------------------
-def get_args() -> CommandLineArgs:
+def get_args() -> Args:
     """Get command-line arguments"""
     parser = argparse.ArgumentParser(
         description='Infer mRNA from Protein',
@@ -39,7 +39,7 @@ def get_args() -> CommandLineArgs:
         with open(args.protein_sequence, 'r') as f:
             args.protein_sequence = f.read().rstrip()
 
-    return CommandLineArgs(protein_sequence=args.protein_sequence, modulo=args.modulo)
+    return Args(protein_sequence=args.protein_sequence, modulo=args.modulo)
 
 # --------------------------------------------------
 def main():
