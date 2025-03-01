@@ -1,18 +1,14 @@
 #!/usr/bin/env python3
 """
-Author : Me <me@foo.com>
-Date   : today
-Purpose: Compute GC content
+Purpose: Translate RNA to proteins
 """
 
 import argparse
-from typing import NamedTuple
-
+from typing import NamedTuple, List
 
 class Args(NamedTuple):
-    """ Command-line arguments """
-    rna: str
-
+    """Command-line arguments"""
+    rna_sequence: str
 
 # --------------------------------------------------
 def get_args() -> Args:
@@ -21,55 +17,66 @@ def get_args() -> Args:
         description='Translate RNA to proteins',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('rna',
+    parser.add_argument('rna_sequence',
                         metavar='RNA',
                         type=str,
                         help='RNA sequence')
 
     args = parser.parse_args()
-    return Args(rna=args.rna)
-
+    return Args(rna_sequence=args.rna_sequence)
 
 # --------------------------------------------------
 def main() -> None:
-    """Make a jazz noise here"""
+    """Main entry point"""
     args = get_args()
-    codigo_genetico = {
-        'UUU': 'F', 'UUC': 'F',  # Fenilalanina
-        'UUA': 'L', 'UUG': 'L',  # Leucina
-        'CUU': 'L', 'CUC': 'L', 'CUA': 'L', 'CUG': 'L',  # Leucina
-        'AUU': 'I', 'AUC': 'I', 'AUA': 'I',  # Isoleucina
-        'AUG': 'M',  # Metionina (inicio)
-        'GUU': 'V', 'GUC': 'V', 'GUA': 'V', 'GUG': 'V',  # Valina
-        'UCU': 'S', 'UCC': 'S', 'UCA': 'S', 'UCG': 'S',  # Serina
-        'CCU': 'P', 'CCC': 'P', 'CCA': 'P', 'CCG': 'P',  # Prolina
-        'ACU': 'T', 'ACC': 'T', 'ACA': 'T', 'ACG': 'T',  # Treonina
-        'GCU': 'A', 'GCC': 'A', 'GCA': 'A', 'GCG': 'A',  # Alanina
-        'UAU': 'Y', 'UAC': 'Y',  # Tirosina
-        'UAA': 'Stop', 'UAG': 'Stop',  # Codones de terminación
-        'CAU': 'H', 'CAC': 'H',  # Histidina
-        'CAA': 'Q', 'CAG': 'Q',  # Glutamina
-        'AAU': 'N', 'AAC': 'N',  # Asparagina
-        'AAA': 'K', 'AAG': 'K',  # Lisina
-        'GAU': 'D', 'GAC': 'D',  # Ácido aspártico
-        'GAA': 'E', 'GAG': 'E',  # Ácido glutámico
-        'UGU': 'C', 'UGC': 'C',  # Cisteína
-        'UGA': 'Stop',  # Codón de terminación
-        'UGG': 'W',  # Triptófano
-        'CGU': 'R', 'CGC': 'R', 'CGA': 'R', 'CGG': 'R',  # Arginina
-        'AGU': 'S', 'AGC': 'S',  # Serina
-        'AGA': 'R', 'AGG': 'R',  # Arginina
-        'GGU': 'G', 'GGC': 'G', 'GGA': 'G', 'GGG': 'G'  # Glicina
-    }
-    list = []
-    for i in range(0, len(args.rna) - len(args.rna) % 3,3):
-        codon = args.rna[i:i+3]
-        if codon in ['UGA', 'UAG', 'UAA']:
-            break
-        else:
-            list.append(codigo_genetico.get(codon, "-"))
-    print("".join(list))
+    protein_sequence = translate_rna_to_protein(args.rna_sequence)
+    print(protein_sequence)
 
+# --------------------------------------------------
+def translate_rna_to_protein(rna_sequence: str) -> str:
+    """Translate RNA sequence into protein sequence
+    
+    Args:
+        rna_sequence (str): The RNA sequence to be translated.
+    
+    Returns:
+        str: The translated protein sequence.
+    """
+    # Genetic code dictionary with one-letter abbreviations
+    genetic_code = {
+        'UUU': 'F', 'UUC': 'F',  # Phenylalanine
+        'UUA': 'L', 'UUG': 'L',  # Leucine
+        'CUU': 'L', 'CUC': 'L', 'CUA': 'L', 'CUG': 'L',  # Leucine
+        'AUU': 'I', 'AUC': 'I', 'AUA': 'I',  # Isoleucine
+        'AUG': 'M',  # Methionine (start)
+        'GUU': 'V', 'GUC': 'V', 'GUA': 'V', 'GUG': 'V',  # Valine
+        'UCU': 'S', 'UCC': 'S', 'UCA': 'S', 'UCG': 'S',  # Serine
+        'CCU': 'P', 'CCC': 'P', 'CCA': 'P', 'CCG': 'P',  # Proline
+        'ACU': 'T', 'ACC': 'T', 'ACA': 'T', 'ACG': 'T',  # Threonine
+        'GCU': 'A', 'GCC': 'A', 'GCA': 'A', 'GCG': 'A',  # Alanine
+        'UAU': 'Y', 'UAC': 'Y',  # Tyrosine
+        'UAA': 'Stop', 'UAG': 'Stop',  # Stop codons
+        'CAU': 'H', 'CAC': 'H',  # Histidine
+        'CAA': 'Q', 'CAG': 'Q',  # Glutamine
+        'AAU': 'N', 'AAC': 'N',  # Asparagine
+        'AAA': 'K', 'AAG': 'K',  # Lysine
+        'GAU': 'D', 'GAC': 'D',  # Aspartic acid
+        'GAA': 'E', 'GAG': 'E',  # Glutamic acid
+        'UGU': 'C', 'UGC': 'C',  # Cysteine
+        'UGA': 'Stop',  # Stop codon
+        'UGG': 'W',  # Tryptophan
+        'CGU': 'R', 'CGC': 'R', 'CGA': 'R', 'CGG': 'R',  # Arginine
+        'AGU': 'S', 'AGC': 'S',  # Serine
+        'AGA': 'R', 'AGG': 'R',  # Arginine
+        'GGU': 'G', 'GGC': 'G', 'GGA': 'G', 'GGG': 'G'  # Glycine
+    }
+    protein_list = [genetic_code.get(codon) for codon in split_into_codons(rna_sequence) if codon not in ['UGA', 'UAG', 'UAA']]
+    return "".join(protein_list)
+
+# --------------------------------------------------
+def split_into_codons(rna_sequence: str) -> List[str]:
+    """Split RNA sequence into codons (triplets of nucleotides)"""
+    return [rna_sequence[i:i+3] for i in range(0, len(rna_sequence) - len(rna_sequence) % 3, 3)]
 
 # --------------------------------------------------
 if __name__ == '__main__':
