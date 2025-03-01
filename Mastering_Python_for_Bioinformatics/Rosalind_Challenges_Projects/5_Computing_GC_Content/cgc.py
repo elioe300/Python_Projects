@@ -1,67 +1,71 @@
 #!/usr/bin/env python3
 """
-Purpose: Calculate Fibonacci sequence
+Author : Me <me@foo.com>
+Date   : today
+Purpose: Compute GC content
 """
 
 import argparse
-from typing import NamedTuple
+import sys
+from typing import NamedTuple, TextIO, Tuple
+from Bio import SeqIO
 
-class Args(NamedTuple):
+class CommandLineArgs(NamedTuple):
     """Command-line arguments"""
-    generations: int
-    litter_size: int
+    file: TextIO
 
 # --------------------------------------------------
-def get_args() -> Args:
+def get_args() -> CommandLineArgs:
     """Get command-line arguments"""
-
     parser = argparse.ArgumentParser(
-        description='Calculate Fibonacci sequence',
+        description='Compute GC content',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('generations',
-                        metavar='generations',
-                        help='Number of generations',
-                        type=int)
-
-    parser.add_argument('litter_size',
-                        metavar='litter',
-                        help='Size of litter per generation',
-                        type=int)
+    parser.add_argument('file',
+                        metavar='FILE',
+                        type=argparse.FileType('rt'),
+                        nargs='?',
+                        default=sys.stdin,
+                        help='Input sequence file')
 
     args = parser.parse_args()
-
-    # Validate the input arguments
-    if not 1 <= args.generations <= 40:
-        parser.error(f'generations "{args.generations}" must be between 1 and 40')
-    if not 1 <= args.litter_size <= 5:
-        parser.error(f'litter "{args.litter_size}" must be between 1 and 5')
-
-    return Args(generations=args.generations, litter_size=args.litter_size)
+    return CommandLineArgs(file=args.file)
 
 # --------------------------------------------------
 def main() -> None:
     """Main entry point"""
-
     args = get_args()
-    fibo_result = fibonacci_generator(args.generations, args.litter_size)
-    print(fibo_result)
+    gc_id, gc_content = max_gc(args.file)
+    print(f'{gc_id}: {gc_content:.6f}%')
 
 # --------------------------------------------------
-def fibonacci_generator(generations: int, litter_size: int) -> int:
-    """Calculate Fibonacci sequence based on number of generations and litter size.
-
+def max_gc(fasta_file: TextIO) -> Tuple[str, float]:
+    """Compute GC content of all records, return highest GC content and ID.
+    
     Args:
-        generations (int): Number of generations.
-        litter_size (int): Size of litter per generation.
-
+        fasta_file (TextIO): The input FASTA file with DNA sequences.
+    
     Returns:
-        int: The Fibonacci sequence value for the given parameters.
+        Tuple[str, float]: The ID of the sequence with the highest GC content and the GC content itself.
     """
-    fib = [0, 1]
-    for _ in range(generations - 1):
-        fib.append(fib[-2] * litter_size + fib[-1])
-    return fib[-1]
+    recs = SeqIO.parse(fasta_file, 'fasta')
+    id_seq_gc = [(rec.id, gc_calculator(rec.seq)) for rec in recs]
+    return max(id_seq_gc, key=lambda x: x[1])
+
+# --------------------------------------------------
+def gc_calculator(dna_sequence: str) -> float:
+    """Calculate GC content and return as percentage
+    
+    Args:
+        dna_sequence (str): The DNA sequence to calculate GC content for.
+    
+    Returns:
+        float: The GC content as a percentage.
+    """
+    g = dna_sequence.count('G')
+    c = dna_sequence.count('C')
+    gc_content = (g + c) / len(dna_sequence) * 100
+    return gc_content
 
 # --------------------------------------------------
 if __name__ == '__main__':
