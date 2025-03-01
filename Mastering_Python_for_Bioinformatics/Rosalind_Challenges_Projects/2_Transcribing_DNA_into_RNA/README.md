@@ -33,9 +33,6 @@ $ cat tests/inputs/input1.txt
 GATGGAACTTGACTACGTAAATT
 ```
 2. **Directorio de salida opcional (argumento opcional)**
-```sh
-$ GATGGAACTTGACTACGTAAATT
-```
 
 
 ## Salida del Programa
