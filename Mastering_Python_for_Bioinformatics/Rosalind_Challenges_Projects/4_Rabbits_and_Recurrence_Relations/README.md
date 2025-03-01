@@ -32,11 +32,13 @@ El archivo `calculate_fibonacci.py` acepta como input:
 ### Validación de Entradas
 
 El programa valida que el número de generaciones esté entre 1 y 40, y que el tamaño de la camada esté entre 1 y 5.
-```python
-if not 1 <= args.generations <= 40:
-        parser.error(f'generations "{args.generations}" must be between 1 and 40')
-if not 1 <= args.litter_size <= 5:
-        parser.error(f'litter "{args.litter_size}" must be between 1 and 5')
+```sh
+$ ./fib.py -3 2
+usage: fib.py [-h] generations litter
+fib.py: error: generations "-3" must be between 1 and 40 
+$ ./fib.py 5 10
+usage: fib.py [-h] generations litter
+fib.py: error: litter "10" must be between 1 and 5 
 ```
 
 ## Salida del Programa
