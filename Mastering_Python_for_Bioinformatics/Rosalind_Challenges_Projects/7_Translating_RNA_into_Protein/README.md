@@ -6,10 +6,10 @@ Este proyecto de Python tiene como propósito traducir secuencias de ARN a secue
 
 ## Instrucciones
 
-Crea un programa llamado `translate_rna_to_protein.py` que aceptará una secuencia de ARN como argumento posicional. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+Crea un programa llamado `prot.py` que aceptará una secuencia de ARN como argumento posicional. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
 
 ```sh
-$ ./translate_rna_to_protein.py -h
+$ ./prot.py -h
 usage: translate_rna_to_protein.py [-h] RNA
 
 Translate RNA to proteins
@@ -23,12 +23,12 @@ optional arguments:
 
 ## Entradas del Programa
 
-El archivo `translate_rna_to_protein.py` acepta como input:
+El archivo `prot.py` acepta como input:
 
 1. **Secuencia de ARN (argumento posicional)**
 
 ```sh
-$ ./translate_rna_to_protein.py AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUGACUGAAGGUUUGGGAUCCCG
+$ ./prot.py AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUGACUGAAGGUUUGGGAUCCCG
 ```
 
 ## Salida del Programa
@@ -36,7 +36,7 @@ $ ./translate_rna_to_protein.py AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUGACUGAAGGUU
 El programa imprimirá la secuencia de proteínas traducida de la secuencia de ARN proporcionada:
 
 ```sh
-$ ./translate_rna_to_protein.py AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUGACUGAAGGUUUGGGAUCCCG
+$ ./prot.py AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUGACUGAAGGUUUGGGAUCCCG
 MAMAPRTEINSTRING
 ```
 
@@ -45,7 +45,7 @@ MAMAPRTEINSTRING
 Para ejecutar el programa y traducir una secuencia de ARN a proteínas:
 
 ```sh
-$ ./translate_rna_to_protein.py AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUGACUGAAGGUUUGGGAUCCCG
+$ ./prot.py AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUGACUGAAGGUUUGGGAUCCCG
 MAMAPRTEINSTRING
 ```
 
