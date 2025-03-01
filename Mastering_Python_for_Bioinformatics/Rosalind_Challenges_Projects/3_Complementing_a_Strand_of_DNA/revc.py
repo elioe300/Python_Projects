@@ -7,12 +7,12 @@ import argparse
 from typing import NamedTuple
 import os
 
-class CommandLineArgs(NamedTuple):
+class Args(NamedTuple):
     """Command-line arguments"""
     dna_sequence: str
 
 # --------------------------------------------------
-def get_args() -> CommandLineArgs:
+def get_args() -> Args:
     """Get command-line arguments"""
 
     parser = argparse.ArgumentParser(
@@ -30,7 +30,7 @@ def get_args() -> CommandLineArgs:
         with open(args.dna_sequence, "r") as file:
             args.dna_sequence = file.read().rstrip()
 
-    return CommandLineArgs(dna_sequence=args.dna_sequence)
+    return Args(dna_sequence=args.dna_sequence)
 
 # --------------------------------------------------
 def main() -> None:
