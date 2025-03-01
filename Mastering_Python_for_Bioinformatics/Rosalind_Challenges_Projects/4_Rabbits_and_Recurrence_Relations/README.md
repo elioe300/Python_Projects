@@ -35,7 +35,7 @@ El programa valida que el número de generaciones esté entre 1 y 40, y que el t
 ```python
 if not 1 <= args.generations <= 40:
         parser.error(f'generations "{args.generations}" must be between 1 and 40')
-    if not 1 <= args.litter_size <= 5:
+if not 1 <= args.litter_size <= 5:
         parser.error(f'litter "{args.litter_size}" must be between 1 and 5')
 ```
 
