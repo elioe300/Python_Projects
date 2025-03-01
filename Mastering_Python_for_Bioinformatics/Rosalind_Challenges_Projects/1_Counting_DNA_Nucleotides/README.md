@@ -20,13 +20,13 @@ positional arguments:
 optional arguments:
   -h, --help  show this help message and exit
 ```
-### Entradas del Programa
+## Entradas del Programa
 El archivo `dna.py` acepta como input:
 
 1. **Secuencia de ADN desde un archivo**
 2. **Secuencia de ADN directamente desde la línea de comandos independientemente de si están en mayúscula o minusculas**
 
-### Salida del Programa
+## Salida del Programa
 
 El programa debe imprimir las frecuencias de las bases A, C, G y T:
 
