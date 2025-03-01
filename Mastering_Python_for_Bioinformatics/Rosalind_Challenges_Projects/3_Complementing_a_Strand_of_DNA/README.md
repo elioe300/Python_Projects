@@ -9,7 +9,7 @@ Este proyecto de Python tiene como propósito imprimir la cadena complementaria 
 Crea un programa llamado `reverse_complement.py` que aceptará una secuencia de ADN o el nombre de un archivo que contiene la secuencia de ADN como argumento posicional. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
 
 ```sh
-$ ./reverse_complement.py -h
+$ ./revc.py -h
 usage: reverse_complement.py [-h] DNA
 
 Print the reverse complement of DNA
@@ -41,14 +41,14 @@ ACCGGGTTTT
 El programa imprimirá la cadena complementaria reversa de la secuencia de ADN proporcionada.
 
 ```sh
-$ ./reverse_complement.py AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
+$ ./revc.py AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 GCTATCAGACACTCTTTTTTAATCCACACAGAGACATATTGCCCGTTGCAGTCAGAATGAAAAGCT
 ```
 
 Para ejecutar el programa y obtener la cadena complementaria reversa de una secuencia de ADN desde un archivo:
 
 ```sh
-$ ./reverse_complement.py sequence.txt
+$ ./revc.py sequence.txt
 GCTATCAGACACTCTTTTTTAATCCACACAGAGACATATTGCCCGTTGCAGTCAGAATGAAAAGCT
 ```
 
@@ -57,10 +57,10 @@ GCTATCAGACACTCTTTTTTAATCCACACAGAGACATATTGCCCGTTGCAGTCAGAATGAAAAGCT
 Para ejecutar el programa y obtener la cadena complementaria reversa de una secuencia de ADN proporcionada directamente en la línea de comandos o desde un archivo de entrada:
 
 ```sh
-$ ./reverse_complement.py AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
+$ ./revc.py AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 GCTATCAGACACTCTTTTTTAATCCACACAGAGACATATTGCCCGTTGCAGTCAGAATGAAAAGCT
 
-$ ./reverse_complement.py sequence.txt
+$ ./revc.py sequence.txt
 GCTATCAGACACTCTTTTTTAATCCACACAGAGACATATTGCCCGTTGCAGTCAGAATGAAAAGCT
 ```
 
