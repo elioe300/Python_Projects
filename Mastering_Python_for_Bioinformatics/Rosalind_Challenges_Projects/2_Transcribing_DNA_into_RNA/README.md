@@ -51,8 +51,8 @@ Cada archivo de salida contendrá las secuencias de ARN transcritas correspondie
 Para ejecutar el programa y transcribir las secuencias de ADN en uno o más archivos de entrada:
 
 ```sh
-$ ./transcribe_dna.py -o rna_out input1.txt input2.txt
-Done, wrote 3 sequences in 2 files to directory "rna_out".
+$ ./rna.py --out_dir rna tests/inputs/*
+Done, wrote 5 sequences in 3 files to directory "rna".
 ```
 
 Esto creará un archivo de salida en el directorio `rna_out` para cada archivo de entrada con las secuencias de ARN transcritas.
