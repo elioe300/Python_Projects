@@ -51,8 +51,8 @@ Para ejecutar el programa y calcular el número de posibles secuencias de mRNA:
 $ ./mrna.py MA
 12
 
-$ ./mrna.py -m 1000000 MYPROTEIN
-196608
+$ ./mrna.py -m 1000000 tests/inputs/1.txt
+448832
 ```
 
 ---
