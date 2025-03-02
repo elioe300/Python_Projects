@@ -55,6 +55,6 @@ $ ./rna.py --out_dir rna tests/inputs/*
 Done, wrote 5 sequences in 3 files to directory "rna".
 ```
 
-Esto creará un archivo de salida en el directorio `rna_out` para cada archivo de entrada con las secuencias de ARN transcritas.
+Esto creará un archivo de salida en el directorio `rna` para cada archivo de entrada con las secuencias de ARN transcritas.
 
 ---
