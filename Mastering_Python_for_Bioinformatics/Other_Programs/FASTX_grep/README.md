@@ -39,19 +39,18 @@ El archivo `fastx_grep.py` acepta como input:
 6. **Búsqueda insensible a mayúsculas/minúsculas (argumento opcional)**
 
 ```sh
-$ ./fastx_grep.py-f fasta -O fastq -o output.fastq -i "pattern" input1.fasta input2.fasta
+$ ./fastx_grep.py -i  "pattern" input.f[aq] -f fasta -O fasta -o output
 ```
 
 ## Salida del Programa
 
-El programa imprimirá las secuencias que coinciden con el patrón de búsqueda en el formato especificado:
+El programa imprimirá las secuencias que coinciden con el patrón de búsqueda en el formato especificado
 
 ## Ejemplo de Uso
 
-Para ejecutar el programa y buscar un patrón en uno o más archivos FASTX:
-
+Para ejecutar el programa y buscar un patrón en uno o más archivos FASTX, teniendo como archivo de entrada:
 ```sh
-$ ./fastx_grep.py -i lsu tests/inputs/lsu.fa
+$ cat lsu.fa
 >ITSLSUmock2p.ITS_M01380:138:000000000-C9GKM:1:1101:14440:2042 2:N:0
 CAAGTTACTTCCTCTAAATGACCAAGCCTAGTGTAGAACCATGTCGTCAGTGTCAGTCTG
 AGTGTAGATCTCGGTGGTCGCCGTATCATTAAAAAAAAAAATGTAATACTACTAGTAATT
@@ -65,6 +64,15 @@ CGTGGACTACCAGGGTATCTAATCCTGTTTGATCCCCACGCTTTCGTGCCTCAGCGTCAG
 TACCGGCCCAGCCACCCGTCTTCACCTTCGGCGTTCCTGTAGATATCTACGCATTTCACC
 GCTACACCTACAGTTCCGGTGGCGCCTACCGGCCTCAAGAAACGCAGTATGCCCAGCTAT
 T
+
+```sh
+$ ./fastx_grep.py -i mo1380 tests/inputs/lsu.fa
+>ITSLSUmock2p.ITS_M01380:138:000000000-C9GKM:1:1101:14440:2042 2:N:0
+CAAGTTACTTCCTCTAAATGACCAAGCCTAGTGTAGAACCATGTCGTCAGTGTCAGTCTG
+AGTGTAGATCTCGGTGGTCGCCGTATCATTAAAAAAAAAAATGTAATACTACTAGTAATT
+ATTAATATTATAATTTTGTCTATTAGCATCTTATTATAGATAGAAGATATTATTCATATT
+TCACTATCTTATACTGATATCAGCTTTATCAGATCACACTCTAGTGAAGATTGTTCTTAA
+CTGAAATTTCCTTCTTCATACAGACACATTAATCTTACCTA
 ```
 
 ---
