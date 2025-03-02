@@ -54,7 +54,7 @@ P20840
 
 ## Ejemplo de Uso
 
-Para ejecutar el programa y encontrar las ubicaciones de los motivos de N-glicosilación en las secuencias de proteínas descargadas:
+Es importante descargar el bash script para descargar los archivos FASTA, ejecutar el programa y encontrar las ubicaciones de los motivos de N-glicosilación en las secuencias de proteínas descargadas:
 
 ```sh
 $ ./mprt.py tests/inputs/2.txt
