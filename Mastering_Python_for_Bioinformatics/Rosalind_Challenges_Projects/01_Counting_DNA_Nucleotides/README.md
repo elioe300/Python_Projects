@@ -23,8 +23,7 @@ optional arguments:
 ## Entradas del Programa
 El archivo `dna.py` acepta como input:
 
-1. **Secuencia de ADN desde un archivo**
-2. **Secuencia de ADN directamente desde la línea de comandos independientemente de si están en mayúscula o minusculas**
+1. **Secuencia de ADN desde un archivo o secuencia de ADN directamente desde la línea de comandos independientemente de si están en mayúscula o minusculas**
 
 ## Salida del Programa
 
