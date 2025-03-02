@@ -31,5 +31,5 @@ El programa debe imprimir las frecuencias de las bases A, C, G y T:
 
 ```sh
 $ ./dna.py AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
-20 12 17 21
+A counts: 20 | C counts: 12 | G counts: 17 | T counts: 21
 ```
