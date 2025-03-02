@@ -9,8 +9,8 @@ Este proyecto de Python tiene como propósito identificar sitios de restricción
 Crea un programa llamado `revp.py` que aceptará un archivo FASTA como argumento posicional. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
 
 ```sh
-$ ./locate_restriction_sites.py -h
-usage: locate_restriction_sites.py [-h] FILE
+$ ./revp.py -h
+usage: revp.py [-h] FILE
 
 Locating Restriction Sites
 
