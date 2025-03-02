@@ -36,7 +36,7 @@ def main() -> None:
     """Main entry point"""
     args = get_args()
     gc_id, gc_content = max_gc(args.file)
-    print(f'{gc_id}: {gc_content:.6f}%')
+    print(f'{gc_id}: {gc_content:.6f}')
 
 # --------------------------------------------------
 def max_gc(fasta_file: TextIO) -> Tuple[str, float]:
