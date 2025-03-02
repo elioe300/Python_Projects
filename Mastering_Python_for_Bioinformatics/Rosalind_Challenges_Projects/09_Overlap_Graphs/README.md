@@ -29,7 +29,20 @@ optional arguments:
 El archivo `graph.py` acepta como input:
 
 1. **Archivo FASTA con secuencias (argumento posicional)**
-2. **Tamaño de solapamiento (argumento opcional)**
+```sh
+$ cat tests/inputs/1.fa
+>Rosalind_0498
+AAATAAA
+>Rosalind_2391
+AAATTTT
+>Rosalind_2323
+TTTTCCC
+>Rosalind_0442
+AAATCCC
+>Rosalind_5013
+GGGTGGG
+```
+3. **Tamaño de solapamiento (argumento opcional)**
 
 ```sh
 $ ./graph.py -k 3 tests/inputs/input.fasta
