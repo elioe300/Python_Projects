@@ -36,7 +36,7 @@ def main() -> None:
     """Main entry point"""
     args = get_args()
     motifs = find_subsequences(args.sequence, args.subsequence)
-    print(" ".join(map(str, motifs)))
+    print("".join(map(str, motifs)))
 
 # --------------------------------------------------
 def find_subsequences(sequence: str, subsequence: str) -> str:
@@ -57,7 +57,7 @@ def find_subsequences(sequence: str, subsequence: str) -> str:
             break
         pos += 1
         motifs.add(index + 1)
-    return "".join(map(str, sorted(motifs)))
+    return " ".join(map(str, sorted(motifs)))
 
 # --------------------------------------------------
 if __name__ == '__main__':
