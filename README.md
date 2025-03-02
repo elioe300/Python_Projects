@@ -9,15 +9,15 @@ Cada proyecto está organizado en directorios según su propósito y temática, 
 
 Actualmente, el repositorio contiene el siguiente directorio principal:  
 
-### [1. Python_Zero_to_Hero-Master_Coding_with_Real_Projects](./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/)  
+### [1. Python Zero to Hero: Master Coding with Real Projects](./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/)  
 Este directorio agrupa proyectos desarrollados durante mi formación en Python el curso [Python Zero to Hero: Master Coding with Real Projects](https://www.udemy.com/course/python-project-masterclass/), siguiendo un enfoque práctico basado en proyectos reales.  
 
 Dentro de este directorio, los proyectos se dividen en:  
 
-- **[non_oop_python_projects](./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/non_oop_python_projects/)**:  
+- **[Non OOP python projects](./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/non_oop_python_projects/)**:  
   Proyectos que siguen un enfoque procedural sin el uso de Programación Orientada a Objetos (OOP).  
 
-- **[oop_python_projects](./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/OOP_python_projects/)**:  
+- **[OOP_python_projects](./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/OOP_python_projects/)**:  
   Proyectos que aplican principios de Programación Orientada a Objetos para mejorar la modularidad y reutilización del código.  
 
 #### Cómo Usar Este Repositorio  
