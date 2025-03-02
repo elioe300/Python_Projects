@@ -4,6 +4,7 @@ Purpose: Tetranucleotide frequency
 """
 
 import argparse
+import os
 from typing import NamedTuple, Tuple
 
 
@@ -27,11 +28,11 @@ def get_args() -> Args:
     )
 
     args = parser.parse_args()
+    if os.path.isfile(args.dna):
+        with open(args.dna) as file:
+                args.dna = file.read().strip()
 
-    with open(args.dna) as file:
-            dna_sequence = file.read().strip()
-
-    return Args(dna=dna_sequence)
+    return Args(args.dna)
 
 # --------------------------------------------------
 def count_nucleotides(dna_sequence: str) -> Tuple[int, int, int, int]:
@@ -58,7 +59,7 @@ def main() -> None:
 
     args = get_args()
     result = count_nucleotides(args.dna)
-    print(*result) 
+    print(f"A counts: {result[0]} | C counts: {result[1]} | G counts: {result[2]} | T counts: {result[3]}") 
 
 # --------------------------------------------------
 if __name__ == '__main__':
