@@ -10,7 +10,7 @@ Crea un programa en Python llamado `mrna.py` que acepte una secuencia de proteí
 
 ```sh
 $ ./mrna.py -h
-usage: infer_mrna_from_protein.py [-h] [-m int] protein
+usage: mrna.py [-h] [-m int] protein
 
 Infer mRNA from Protein
 
@@ -28,6 +28,10 @@ optional arguments:
 El archivo `mrna.py` acepta como input:
 
 1. **Secuencia de proteínas o archivo que contiene la secuencia de proteínas (argumento posicional)**
+```sh
+$ cat 1.txt
+MSVHDQCHHQLSFSMMECLLPRSEHTRMEWKTWDVVVWMPRRWPWGPSRDKTCIYAHTCMQGKDPIFHRIIP
+```
 2. **Valor de módulo opcional (argumento opcional)**
 
 ## Salida del Programa
@@ -35,7 +39,7 @@ El archivo `mrna.py` acepta como input:
 El programa imprimirá el número de posibles secuencias de mRNA que podrían haber codificado la secuencia de proteínas proporcionada, utilizando el valor de módulo opcional:
 
 ```sh
-$ ./infer_mrna_from_protein.py -m 1000000 MYPROTEIN
+$ ./mrna.py -m 1000000 MYPROTEIN
 196608
 ```
 
@@ -44,10 +48,10 @@ $ ./infer_mrna_from_protein.py -m 1000000 MYPROTEIN
 Para ejecutar el programa y calcular el número de posibles secuencias de mRNA:
 
 ```sh
-$ ./infer_mrna_from_protein.py MYPROTEIN
-196608
+$ ./mrna.py MA
+12
 
-$ ./infer_mrna_from_protein.py -m 1000000 MYPROTEIN
+$ ./mrna.py -m 1000000 MYPROTEIN
 196608
 ```
 
