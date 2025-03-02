@@ -10,7 +10,7 @@ Crea un programa llamado `hamm.py` que aceptará dos secuencias de ADN como argu
 
 ```sh
 $ ./hamm.py -h
-usage: calculate_hamming_distance.py [-h] str str
+usage: hamm.py [-h] str str
 
 Calculate Hamming distance
 
