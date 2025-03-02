@@ -1,4 +1,4 @@
-# Project 1. Tetranucleotide Frequency
+# Project 1: Tetranucleotide Frequency
 
 # Descripción
 
