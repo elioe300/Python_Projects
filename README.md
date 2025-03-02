@@ -20,12 +20,6 @@ Dentro de este directorio, los proyectos se dividen en:
 - **[OOP_python_projects](./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/OOP_python_projects/)**:  
   Proyectos que aplican principios de Programación Orientada a Objetos para mejorar la modularidad y reutilización del código.  
 
-#### Cómo Usar Este Repositorio  
-
-1. Explora los directorios y revisa los diferentes proyectos disponibles.  
-2. Cada proyecto contiene su propio README con información detallada sobre su propósito, instrucciones de uso.  
-3. Si encuentras algo interesante, siéntete libre de clonar el repositorio y probar el código en tu entorno local.
-
 ### [2. Mastering Python for Bioinformatics](./Mastering_Python_for_Bioinformatics/)
 Este directorio agrupa los proyectos realizados durante mi lectura del libro [Mastering Python for Bioinformatics](https://learning.oreilly.com/library/view/mastering-python-for/9781098100872/). Este libro guía al lector a través de 14 retos en Rosalind, una plataforma dedicada a la resolución de problemas para el aprendizaje de la bioinformática y la programación.
 
@@ -38,6 +32,16 @@ Dentro de este directorio, los proyectos se dividen en:
 
 - **[Other Programs](./Mastering_Python_for_Bioinformatics/Other_Programs/)**:  
   Proyectos ajenos a Rosalind vistos en el libro.
+  
+---
+
+## Cómo Usar Este Repositorio  
+
+1. Explora los directorios y revisa los diferentes proyectos disponibles.  
+2. Cada proyecto contiene su propio README con información detallada sobre su propósito, instrucciones de uso.  
+3. Si encuentras algo interesante, siéntete libre de clonar el repositorio y probar el código en tu entorno local.
+
+---
 
 ## Contacto  
 
