@@ -10,7 +10,7 @@ Crea un programa llamado `prot.py` que aceptará una secuencia de ARN como argum
 
 ```sh
 $ ./prot.py -h
-usage: translate_rna_to_protein.py [-h] RNA
+usage: prot.py [-h] RNA
 
 Translate RNA to proteins
 
