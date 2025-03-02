@@ -1,4 +1,4 @@
-# Project 10: LFinding a Shared Motif
+# Project 10: Finding a Shared Motif
 
 ## Descripción
 
@@ -10,7 +10,7 @@ Crea un programa llamado `lcsm.py` que aceptará un archivo FASTA como argumento
 
 ```sh
 $ ./lcsm.py -h
-usage: longest_common_substring.py [-h] FILE
+usage: lcsm.py [-h] FILE
 
 Longest Common Substring
 
@@ -52,9 +52,7 @@ Para ejecutar el programa y encontrar la subcadena común más larga entre varia
 
 ```sh
 $ ./lcsm.py tests/inputs/1.fa
-CA
+# En este caso, el programa puede imprimir estas cadenas, puesto que son las más largas: CA ó AC ó TA
 ```
 
 ---
-
-Con esta descripción detallada y los comentarios del código, cualquier persona que consulte tu proyecto podrá entender fácilmente cómo utilizar el programa y cómo funciona.
