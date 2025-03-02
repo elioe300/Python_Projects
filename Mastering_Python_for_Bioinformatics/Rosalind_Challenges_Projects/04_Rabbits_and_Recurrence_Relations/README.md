@@ -6,11 +6,11 @@ Este proyecto de Python calcula la secuencia de Fibonacci en función del númer
 
 ## Instrucciones
 
-Crea un programa llamado `calculate_fibonacci.py` que aceptará dos argumentos posicionales: el número de generaciones y el tamaño de la camada. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+Crea un programa llamado `fib.py` que aceptará dos argumentos posicionales: el número de generaciones y el tamaño de la camada. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
 
 ```sh
 $ ./fib.py -h
-usage: calculate_fibonacci.py [-h] generations litter
+usage: fib.py [-h] generations litter
 
 Calculate Fibonacci sequence
 
@@ -24,7 +24,7 @@ optional arguments:
 
 ## Entradas del Programa
 
-El archivo `calculate_fibonacci.py` acepta como input:
+El archivo `fib.py` acepta como input:
 
 1. **Número de generaciones (argumento posicional)**
 2. **Tamaño de la camada por generación (argumento posicional)**
@@ -55,8 +55,8 @@ $ ./fib.py 5 3
 Para ejecutar el programa y calcular la secuencia de Fibonacci en función del número de generaciones y el tamaño de la camada:
 
 ```sh
-$ ./fib.py 5 3
-19
+$ ./fib.py 30 4 
+436390025825
 ```
 
 ---
