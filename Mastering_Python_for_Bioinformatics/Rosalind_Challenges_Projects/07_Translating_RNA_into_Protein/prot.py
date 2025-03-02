@@ -70,7 +70,11 @@ def translate_rna_to_protein(rna_sequence: str) -> str:
         'AGA': 'R', 'AGG': 'R',  # Arginine
         'GGU': 'G', 'GGC': 'G', 'GGA': 'G', 'GGG': 'G'  # Glycine
     }
-    protein_list = [genetic_code.get(codon) for codon in split_into_codons(rna_sequence) if codon not in ['UGA', 'UAG', 'UAA']]
+    protein_list = []
+    for codon in split_into_codons(rna_sequence):
+        if codon in ['UGA', 'UAG', 'UAA']:
+            break
+        protein_list.append(genetic_code.get(codon))
     return "".join(protein_list)
 
 # --------------------------------------------------
