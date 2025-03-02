@@ -24,7 +24,14 @@ optional arguments:
 El archivo `dna.py` acepta como input:
 
 1. **Secuencia de ADN desde un archivo o secuencia de ADN directamente desde la línea de comandos independientemente de si están en mayúscula o minusculas**
-
+```sh
+Archivo que contiene ADN
+$ cat tests/inputs/input1.txt
+AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
+# --------------------------------------------------
+Secuencia de ADN directamente desde la línea de comandos
+$ ./dna.py AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
+```
 ## Salida del Programa
 
 El programa debe imprimir las frecuencias de las bases A, C, G y T:
