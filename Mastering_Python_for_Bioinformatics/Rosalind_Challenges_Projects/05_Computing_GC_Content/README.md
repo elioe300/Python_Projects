@@ -10,7 +10,7 @@ Crea un programa llamado `cgc.py` que aceptará un archivo de secuencias de ADN 
 
 ```sh
 $ ./cgc.py -h
-usage: compute_gc_content.py [-h] FILE
+usage: cgc.py [-h] FILE
 
 Compute GC content
 
@@ -52,8 +52,19 @@ Rosalind_5723 52.806415
 
 Para ejecutar el programa y calcular el contenido de GC de las secuencias en un archivo FASTA:
 
+1. Llamando directamente al programa con el argumento posicional
 ```sh
 $ ./cgc.py tests/inputs/1.fa
+Rosalind_0808 60.919540
+```
+2. Usando el operador < para redirigir la entrada desde un archivo
+```sh
+$ ./cgc.py < tests/inputs/1.fa
+Rosalind_0808 60.919540
+```
+3. Usando pipe
+```sh
+$ cat tests/inputs/1.fa | ./cgc.py
 Rosalind_0808 60.919540
 ```
 
