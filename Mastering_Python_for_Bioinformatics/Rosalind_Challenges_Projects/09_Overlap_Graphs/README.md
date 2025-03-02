@@ -10,7 +10,7 @@ Crea un programa llamado `graph.py` que aceptará un archivo FASTA como argument
 
 ```sh
 $ ./graph.py -h
-usage: graph_through_sequences.py [-h] [-k size] [-d] FILE
+usage: graph.py [-h] [-k size] [-d] FILE
 
 Graph through sequences
 
@@ -54,10 +54,6 @@ $ ./grph.py tests/inputs/1.fa
 Rosalind_0498 Rosalind_2391
 Rosalind_0498 Rosalind_0442
 Rosalind_2391 Rosalind_2323
-seq1 seq2
-seq3 seq4
 ```
 
 ---
-
-Con esta descripción detallada y los comentarios del código, cualquier persona que consulte tu proyecto podrá entender fácilmente cómo utilizar el programa y cómo funciona.
