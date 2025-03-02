@@ -10,7 +10,7 @@ Crea un programa llamado `mprt.py` que aceptará un archivo de texto con IDs de 
 
 ```sh
 $ ./mprt.py -h
-usage: find_nglycosylation_motif.py [-h] [-d DIR] FILE
+usage: mprt.py [-h] [-d DIR] FILE
 
 Find locations of N-glycosylation motif
 
@@ -32,8 +32,8 @@ El archivo `mprt.py` acepta como input:
 $ cat tests/inputs/1.txt
 A2Z669
 B5ZC00
-P07204_TRBM_HUMAN
-P20840_SAG1_YEAST
+P07204
+P20840
 ```
 2. **Directorio de descarga opcional (argumento opcional)**
 
@@ -67,5 +67,3 @@ P20840
 ```
 
 ---
-
-Con esta descripción detallada y los comentarios del código, cualquier persona que consulte tu proyecto podrá entender fácilmente cómo utilizar el programa y cómo funciona.
