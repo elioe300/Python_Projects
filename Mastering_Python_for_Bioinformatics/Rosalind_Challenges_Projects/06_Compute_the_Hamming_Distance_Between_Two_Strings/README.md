@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto de Python tiene como propósito calcular la distancia de Hamming entre dos secuencias de ADN, superando el desafío de Rosalind ["Compute the Hamming Distance Between Two Strings"](https://rosalind.info/problems/ba1g/). El programa toma un único argumento posicional, que es un archivo legible que contendrá dos líneas de secuencias de ADN y que imprimirá la distancia de Hamming entre ellas. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+Este proyecto de Python tiene como propósito calcular la distancia de Hamming entre dos secuencias de ADN, superando el desafío de Rosalind ["Compute the Hamming Distance Between Two Strings"](https://rosalind.info/problems/ba1g/). El programa toma dos argumentos posicionales, las cuáles serán dos líneas de secuencias de ADN y que imprimirá la distancia de Hamming entre ellas. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
 
 ## Instrucciones
 
@@ -37,7 +37,7 @@ CATCGTAATGACGGCCT
 El programa imprimirá la distancia de Hamming entre las dos secuencias de ADN proporcionadas:
 
 ```sh
-$ ./hamm.py tests/inputs/1.txt
+$ ./hamm.py GAGCCTACTAACGGGAT CATCGTAATGACGGCCT
 7
 ```
 
@@ -46,8 +46,8 @@ $ ./hamm.py tests/inputs/1.txt
 Para ejecutar el programa y calcular la distancia de Hamming entre dos secuencias de ADN:
 
 ```sh
-$ ./hamm.py tests/inputs/2.txt
-503
+$ ./hamm.py GAGCCTACTAACGGGAT CATCGTAATGACGGCCT
+7
 ```
 
 ---
