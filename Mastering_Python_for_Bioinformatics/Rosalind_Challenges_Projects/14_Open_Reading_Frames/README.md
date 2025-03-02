@@ -10,7 +10,7 @@ Crea un programa llamado `orf.py` que aceptará un archivo FASTA como argumento 
 
 ```sh
 $ ./orf.py -h
-usage: open_reading_frames.py [-h] FILE
+usage: orf.py [-h] FILE
 
 Open Reading Frames
 
