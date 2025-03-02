@@ -6,11 +6,11 @@ Este proyecto de Python transcribe secuencias de ADN a secuencias de ARN, supera
 
 ## Instruciones
 
-Crea un programa llamado `transcribe_dna.py` que aceptará uno o más archivos de ADN como argumentos posicionales. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+Crea un programa llamado `rna.py` que aceptará uno o más archivos de ADN como argumentos posicionales. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
 
 ```sh
 $ ./rna.py -h
-usage: transcribe_dna.py [-h] [--out_dir DIR] FILE [FILE ...]
+usage: rna.py [-h] [--out_dir DIR] FILE [FILE ...]
 
 Transcribe DNA into RNA
 
@@ -25,7 +25,7 @@ optional arguments:
 
 ## Entradas del Programa
 
-El archivo `transcribe_dna.py` acepta como input:
+El archivo `rna.py` acepta como input:
 
 1. **Uno o más archivos de ADN (argumento(s) posicional(es))**
 ```sh
