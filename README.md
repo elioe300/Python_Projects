@@ -3,7 +3,7 @@
 ## Introducción  
 Bienvenidos a **Python_Projects**, un repositorio donde recopilo todos los proyectos que he desarrollado a lo largo de mi aprendizaje en **Python**.  
 
-Cada proyecto está organizado en directorios según su propósito y temática, permitiendo una navegación clara y estructurada.  
+Cada proyecto está organizado en directorios según su propósito y temática.  
 
 ## Estructura del Repositorio  
 
