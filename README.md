@@ -1,4 +1,6 @@
-# Python Projects  
+# Python Projects
+
+[English Version](./README_eng.md)
 
 ## Introducción  
 Bienvenidos a **Python_Projects**, un repositorio donde recopilo todos los proyectos que he desarrollado a lo largo de mi aprendizaje en **Python**.  
@@ -9,7 +11,7 @@ Cada proyecto está organizado en directorios según su propósito y temática.
 
 Actualmente, el repositorio contiene el siguiente directorio principal:  
 
-### [1. Python Zero to Hero: Master Coding with Real Projects](./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/)  
+### [1. Python Zero to Hero: Master Coding with Real Projects(./Python_Zero_to_Hero-Master_Coding_with_Real_Projects/)  
 Este directorio agrupa proyectos desarrollados durante mi formación en Python el curso [Python Zero to Hero: Master Coding with Real Projects](https://www.udemy.com/course/python-project-masterclass/), siguiendo un enfoque práctico basado en proyectos reales.  
 
 Dentro de este directorio, los proyectos se dividen en:  
