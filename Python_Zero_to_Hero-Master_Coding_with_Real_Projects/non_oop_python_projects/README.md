@@ -1,319 +1,290 @@
-# Proyectos de Python - Programación Procedural (Non-OOP)
+# Python Projects - Procedural Programming (Non-OOP)
 
-Este documento proporciona una descripción detallada de varios proyectos desarrollados en Python que siguen un enfoque procedural (sin Programación Orientada a Objetos). A continuación, se presentan sus funcionalidades principales, explicaciones sobre las funciones utilizadas y ejemplos de uso.
+This document provides a detailed description of various Python projects developed using a procedural programming approach (without Object-Oriented Programming). Below, you will find their main features, explanations of the functions used, and usage examples.
 
 ---
 
 ## [1. Note App](./note_app.py)
 
-### Descripción
-Una aplicación de línea de comandos que permite a los usuarios crear, ver, editar y eliminar notas.
+### Description
+A command-line application that allows users to create, view, edit, and delete notes.
 
-### Funciones principales
+### Main Functions
 
-- **menu()**: Muestra el menú de opciones.
-- **view_notes()**: Muestra el contenido de una nota seleccionada.
-- **create_note()**: Permite crear una nueva nota o editar una existente.
-- **delete_note()**: Elimina una nota seleccionada por el usuario.
+- **menu()**: Displays the options menu.
+- **view_notes()**: Shows the content of a selected note.
+- **create_note()**: Allows the creation of a new note or editing an existing one.
+- **delete_note()**: Deletes a note selected by the user.
 
-### Ejemplo de uso
+### Usage Example
 ```python
-menu() # Inicia la aplicación interactiva en CLI
+menu()  # Starts the interactive CLI application
 ```
 
 ---
 
 ## [2. File Synchronizer with Change Log](./file_synchronizer_with_change_log.py)
 
-### Descripción
-Este proyecto permite sincronizar archivos entre dos carpetas, manteniendo un registro de los cambios en un archivo log.
+### Description
+This project synchronizes files between two folders while maintaining a change log.
 
----
+### Main Functions
 
-### Funciones principales
+- **calculate_md5(archive_route)**: Calculates the MD5 hash of a file.
+- **copy_archives(source_route, backup_route)**: Copies files from a source folder to a backup folder.
+- **clean_archives(source_route, backup_route)**: Deletes obsolete files in the backup folder.
+- **backup_and_sync(source_route, backup_route)**: Synchronizes files between two folders.
 
-- **calculate_md5(archive_route)**: Calcula el hash MD5 de un archivo.
-- **copy_archives(source_route, backup_route)**: Copia archivos desde una carpeta de origen a una de respaldo.
-- **clean_archives(source_route, backup_route)**: Elimina archivos obsoletos en la carpeta de respaldo.
-- **backup_and_sync(source_route, backup_route)**: Sincroniza archivos entre dos carpetas.
-
-### Ejemplo de uso
+### Usage Example
 ```python
-backup_and_sync("C:\\ruta\\origen", "C:\\ruta\\respaldo")
+backup_and_sync("C:\\path\\to\\source", "C:\\path\\to\\backup")
 ```
 
 ---
 
 ## [3. Downloader FASTA](./downloader_FASTA.py)
 
-### Descripción
-Descarga secuencias biológicas en formato FASTA desde NCBI utilizando un ID o un término de búsqueda.
+### Description
+Downloads biological sequences in FASTA format from NCBI using an ID or a search term.
 
----
+### Main Functions
 
-### Funciones principales
+- **ID_finder(search_term, download_route)**: Downloads a sequence by its ID.
+- **NCBI_finder(search_term, download_route)**: Searches for sequences on NCBI and allows selecting IDs for download.
+- **show_notification(title, message)**: Displays a system notification.
 
-- **ID_finder(search_term, download_route)**: Descarga una secuencia por su ID.
-- **NCBI_finder(search_term, download_route)**: Busca secuencias en NCBI y permite seleccionar IDs para descargar.
-- **mostrar_notificacion(titulo, mensaje)**: Muestra una notificación en el sistema operativo.
-
-### Ejemplo de uso
+### Usage Example
 ```python
-ID_finder("NM_001301717", "C:\\ruta\\descargas")
+ID_finder("NM_001301717", "C:\\downloads")
 ```
 
 ---
 
 ## [4. Bioinformatic Archive Organizer](./bioinformatic_archive_organizer.py)
 
-### Descripción
-Este script organiza los archivos dentro de un directorio indicado en la entrada por la(s) ruta(s) de salida y extensión que desee el usuario.
+### Description
+This script organizes files in a specified directory based on user-defined output paths and extensions.
 
----
+### Main Functions
 
-### Funciones principales
+- **bioinformatics_file_organizer(route)**: Organizes files by their extension within the specified path.
 
-- **bioinformatics_file_organizer(route)**: Organiza archivos según su extensión dentro de la ruta especificada.
-
-### Ejemplo de uso
+### Usage Example
 ```python
-bioinformatics_file_organizer("C:\\ruta\\archivos")
+bioinformatics_file_organizer("C:\\path\\to\\files")
 ```
 
 ---
 
 ## [5. Acronymizer](./acronymizer.py)
 
-### Descripción
-Transforma una frase dada por el usuario en un acrónimo.
+### Description
+Transforms a user-provided phrase into an acronym.
 
----
+### Main Functions
 
-### Funciones principales
+- **acronymizer()**: Asks the user for a phrase and generates an acronym using the first letter of each word.
 
-- **acronymizer()**: Solicita una frase al usuario y genera un acrónimo tomando la primera letra de cada palabra.
-
-### Ejemplo de uso
+### Usage Example
 ```python
 acronym = acronymizer()
-print(acronym) # Output: 'NASA' si la entrada es 'National Aeronautics and Space Administration'
+print(acronym)  # Output: 'NASA' if the input is 'National Aeronautics and Space Administration'
 ```
 
 ---
 
 ## [6. BMI Tracker](./bmi_tracker.py)
 
-### Descripción
-Calcula el Índice de Masa Corporal (BMI) y proporciona una interpretación.
+### Description
+Calculates the Body Mass Index (BMI) and provides an interpretation.
 
----
+### Main Functions
 
-### Funciones principales
+- **bmi_tracker()**: Asks the user for their height and weight, calculates the BMI, and provides an interpretation based on the result.
 
-- **bmi_tracker()**: Solicita al usuario su altura y peso, calcula el BMI y devuelve una interpretación basada en el resultado.
-
-### Ejemplo de uso
+### Usage Example
 ```python
-resultado = bmi_tracker()
-print(resultado)
+result = bmi_tracker()
+print(result)
 ```
 
 ---
 
 ## [7. Bulk Rename Bio Files](./bulk_rename_bio_file.py)
 
-### Descripción
-Renombra en masa archivos dentro de un directorio con un prefijo y un índice numerado.
+### Description
+Mass renames files in a directory with a prefix and a numbered index.
 
----
+### Main Functions
 
-### Funciones principales
+- **bulk_rename(folder_path, prefix, extension)**: Renames files based on their extension in a specified directory.
 
-- **bulk_rename(folder_path, prefix, extension)**: Renombra archivos según su extensión dentro de un directorio especificado.
-
-### Ejemplo de uso
+### Usage Example
 ```python
-bulk_rename('ruta/al/directorio', 'prefijo', '.txt')
+bulk_rename('path/to/directory', 'prefix', '.txt')
 ```
 
 ---
 
 ## [8. CPU RAM Monitor](./CPU_RAM_monitor.py)
 
-### Descripción
-Este script monitorea el uso del CPU y la RAM, y envía notificaciones si los valores superan ciertos umbrales.
+### Description
+This script monitors CPU and RAM usage, sending notifications if values exceed certain thresholds.
 
----
+### Main Functions
 
-### Funciones principales
+- **monitor_system_usage()**: Continuously monitors CPU and RAM usage, sending notifications if thresholds are exceeded.
 
-- **monitor_system_usage()**: Monitorea continuamente el uso del CPU y la RAM, enviando notificaciones si los valores superan ciertos umbrales.
-- 
-  ```python
-  monitor_system_usage()
-  ```
+### Usage Example
+```python
+monitor_system_usage()
+```
 
 ---
 
 ## [9. Data Entry Automator](./data_entry_automator.py)
 
-### Descripción
-Este script automatiza la entrada de datos y la creación/actualización de un archivo CSV.
+### Description
+Automates data entry and the creation/update of a CSV file.
 
----
+### Main Functions
 
-### Funciones principales
+- **data_entry_automator(input_file, output_csv)**: Converts input data into a pandas DataFrame and saves/concatenates it into a CSV file.
 
-- **data_entry_automator(input_file, output_csv)**: Convierte datos de entrada en un DataFrame de pandas y los guarda/concatena en un archivo CSV.
-- 
-  ```python
-  data_to_enter = [
-      {"name": "Alice", "age": 30, "city": "New York"},
-      {"name": "Bob", "age": 32, "city": "San Francisco"},
-      {"name": "Charlie", "age": 35, "city": "Los Angeles"}
-  ]
-  data_entry_automator(data_to_enter, "output_file")
-  ```
+### Usage Example
+```python
+data_to_enter = [
+    {"name": "Alice", "age": 30, "city": "New York"},
+    {"name": "Bob", "age": 32, "city": "San Francisco"},
+    {"name": "Charlie", "age": 35, "city": "Los Angeles"}
+]
+data_entry_automator(data_to_enter, "output_file")
+```
 
 ---
 
 ## [10. Data Guardian](./data_guardian.py)
 
-### Descripción
-Este script copia archivos y subdirectorios desde el directorio de origen al directorio de respaldo y elimina archivos obsoletos en el directorio de respaldo.
+### Description
+This script copies files and subdirectories from the source directory to the backup directory and deletes obsolete files in the backup directory.
 
----
+### Main Functions
 
-### Funciones principales
+- **copy_archives(source_route, backup_route)**: Copies files and subdirectories from the source directory to the backup directory.
+- **clean_archives(source_route, backup_route)**: Deletes files in the backup directory that no longer exist in the source directory.
+- **backup_and_sync(source_route, backup_route)**: Backs up and synchronizes files between two directories.
 
-- **copy_archives(source_rute, backup_rute)**: Copia archivos y subdirectorios desde el directorio de origen al directorio de respaldo.
-
-- **clean_archives(source_rute, backup_rute)**: Elimina archivos en el directorio de respaldo que ya no existen en el directorio de origen.
-
-- **backup_and_sync(source_rute, backup_rute)**: Realiza una copia de seguridad y sincronización de archivos entre dos directorios.
-  
-  ```python
-  backup_and_sync('ruta/al/directorio/origen', 'ruta/al/directorio/respaldo')
-  ```
+### Usage Example
+```python
+backup_and_sync('path/to/source', 'path/to/backup')
+```
 
 ---
 
 ## [11. FASTA Information Slicer](./fasta_information_slicer.py)
 
-### Descripción
-Este script procesa un archivo FASTA y extrae información sobre identificadores y sus secuencias.
+### Description
+This script processes a FASTA file and extracts information about identifiers and their sequences.
 
----
+### Main Functions
 
-### Funciones principales
+- **fasta_info_slicer(fasta_file)**: Processes a FASTA file and extracts information about identifiers and sequences.
+- **iterator(directory)**: Iterates over files in a given directory and processes found FASTA files.
 
-- **fasta_info_slicer(fasta_file)**: Procesa un archivo FASTA y extrae información sobre identificadores y secuencias.
-
-- **iterator(directory)**: Itera sobre los archivos en un directorio dado y procesa los archivos FASTA encontrados.
-  
-  ```python
-  resultado = iterator('ruta/al/directorio')
-  print(resultado)
-  ```
+### Usage Example
+```python
+result = iterator('path/to/directory')
+print(result)
+```
 
 ---
 
 ## [12. File Renamer](./file_renamer.py)
 
-### Descripción
-Este script renombra archivos en un directorio especificado usando un prefijo y un índice numerado.
+### Description
+Renames files in a specified directory using a prefix and a numbered index.
 
----
+### Main Functions
 
-### Funciones principales
+- **file_rename(folder_path, prefix, extension)**: Renames files in a given directory with a prefix and a numbered index.
 
-- **file_rename(folder_path, prefix, extension)**: Renombra archivos en un directorio dado con un prefijo y un índice numerado.
-  
-  ```python
-  file_rename('ruta/al/directorio', 'prefijo', 'txt')
-  ```
+### Usage Example
+```python
+file_rename('path/to/directory', 'prefix', 'txt')
+```
 
 ---
 
 ## [13. Folder Refiner](./folder_refiner.py)
 
-### Descripción
-Este script elimina archivos con extensiones específicas en un directorio dado.
+### Description
+This script deletes files with specific extensions in a given directory.
 
----
+### Main Functions
 
-### Funciones principales
+- **folder_refiner(folder_path, extension)**: Deletes files with specific extensions in a given directory.
 
-- **folder_refiner(folder_path, extension)**: Elimina archivos con extensiones específicas en un directorio dado.
-  
-  ```python
-  folder_refiner('ruta/al/directorio', '.txt')
-  folder_refiner('ruta/al/directorio', ['.txt', '.log'])
-  ```
+### Usage Example
+```python
+folder_refiner('path/to/directory', '.txt')
+folder_refiner('path/to/directory', ['.txt', '.log'])
+```
 
 ---
 
 ## [14. PDF Text Grabber](./PDFTextGrabber.py)
 
-### Descripción
-Este script extrae el texto de páginas específicas de archivos PDF.
+### Description
+This script extracts text from specific pages of PDF files.
 
----
+### Main Functions
 
-### Funciones principales
+- **extract_text(pdf_path, page_number)**: Extracts text from a specific page of a PDF file.
+- **show_page_count(pdf_path)**: Shows the number of pages in a PDF file.
+- **PDFTextGrabber()**: Interacts with the user and extracts text from a PDF file.
 
-- **extract_text(pdf_path, page_number)**: Extrae el texto de una página específica de un archivo PDF.
-
-- **show_page_count(pdf_path)**: Muestra el número de páginas de un archivo PDF.
- 
-- **PDFTextGrabber()**: Interactúa con el usuario y extrae texto de un archivo PDF.
-  
-  ```python
-  if __name__ == "__main__":
-      PDFTextGrabber()
-  ```
+### Usage Example
+```python
+if __name__ == "__main__":
+    PDFTextGrabber()
+```
 
 ---
 
 ## [15. Pomodoro Timer](./pomodoro_timer.py)
 
-### Descripción
-Este script ejecuta el ciclo de estudio Pomodoro durante 25 minutos y el ciclo de descanso durante 5 minutos, enviando notificaciones al inicio y al final de cada ciclo.
+### Description
+This script runs a Pomodoro study cycle for 25 minutes and a break cycle for 5 minutes, sending notifications at the start and end of each cycle.
 
----
+### Main Functions
 
-### Funciones principales
+- **pomodoro_timer()**: Runs the Pomodoro study cycle for 25 minutes and sends a notification at the start and end of the cycle.
+- **rest_timer()**: Runs the break cycle for 5 minutes and sends a notification at the start and end of the cycle.
+- **main**: Asks the user how many Pomodoro cycles they want to perform and runs the study and break cycles.
 
-- **pomodoro_timer()**: Ejecuta el ciclo de estudio Pomodoro durante 25 minutos y envía una notificación al inicio y al final del ciclo.
+### Usage Example
+```python
+if __name__ == "__main__":
+    cycles = int(input("Enter the number of Pomodoro cycles you want to perform: "))
+    for cycle in range(cycles):
+        pomodoro_timer()
+        rest_timer()
+```
 
-- **rest_timer()**: Ejecuta el ciclo de descanso durante 5 minutos y envía una notificación al inicio y al final del ciclo.
-
-- **main**: Pregunta al usuario la cantidad de ciclos Pomodoro que quiere realizar y ejecuta los ciclos de estudio y descanso.
-  
-  ```python
-  if __name__ == "__main__":
-      cycles = int(input("Introduzca la cantidad de ciclos pomodoro que quiera realizar: "))
-      for cycle in range(cycles):
-          pomodoro_timer()
-          rest_timer()
-  ```
-  
 ---
 
 ## [16. Random Guessing Game](./random_guessing_game.py)
 
-### Descripción
-Este script inicia un juego de adivinanza de números. El programa genera un número aleatorio y el usuario debe adivinarlo en el menor número de intentos posibles.
+### Description
+This script starts a number-guessing game. The program generates a random number, and the user has to guess it in the fewest attempts possible.
+
+### Main Functions
+
+- **random_guessing_game()**: Starts a number-guessing game. The user has to guess the number generated by the program.
+
+### Usage Example
+```python
+random_guessing_game()
+```
 
 ---
-
-### Funciones principales
-
-- **random_guessing_game()**: Inicia un juego de adivinanza de números. El usuario debe adivinar el número generado por el programa.
-
-  ```python
-  random_guessing_game()
-  ```
-
----
-
