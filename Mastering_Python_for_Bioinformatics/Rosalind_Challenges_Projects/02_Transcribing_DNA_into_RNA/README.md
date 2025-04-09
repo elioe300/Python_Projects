@@ -1,12 +1,14 @@
 # Project 2: Transcribe DNA into RNA
 
-## Descripción
+## Description
 
-Este proyecto de Python transcribe secuencias de ADN a secuencias de ARN, superando el desafio de Rosalind ["Transcribing DNA into RNA"](https://rosalind.info/problems/rna/). El programa toma uno o más archivos de ADN como entrada y genera archivos correspondientes con las secuencias de ARN transcritas en un directorio de salida especificado. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+This Python project transcribes DNA sequences into RNA sequences, addressing the Rosalind challenge ["Transcribing DNA into RNA"](https://rosalind.info/problems/rna/). The program takes one or more DNA files as input and generates corresponding files with the transcribed RNA sequences in a specified output directory. The objective of this project is to follow the guidelines from the book *Mastering Python for Bioinformatics*, as detailed below:
 
-## Instruciones
+---
 
-Crea un programa llamado `rna.py` que aceptará uno o más archivos de ADN como argumentos posicionales. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+## Instructions
+
+Create a program called `rna.py` that accepts one or more DNA files as positional arguments. The program should print a usage statement for the flags `-h` or `--help`:
 
 ```sh
 $ ./rna.py -h
@@ -23,38 +25,43 @@ optional arguments:
                 Output directory (default: out)
 ```
 
-## Entradas del Programa
+---
 
-El archivo `rna.py` acepta como input:
+## Program Inputs
 
-1. **Uno o más archivos de ADN (argumento(s) posicional(es))**
+The file `rna.py` accepts the following inputs:
+
+1. **One or more DNA files (positional argument(s))**
 ```sh
 $ cat tests/inputs/input1.txt
 GATGGAACTTGACTACGTAAATT
 ```
-2. **Directorio de salida opcional (argumento opcional)**
+2. **Optional output directory (optional argument)**
 
+---
 
-## Salida del Programa
+## Program Output
 
-El directorio de salida predeterminado es "out". El programa debe imprimir un mensaje indicando cuántas secuencias se han transcrito y cuántos archivos de salida se han creado en el directorio especificado:
+The default output directory is "out". The program should print a message indicating how many sequences were transcribed and how many output files were created in the specified directory:
 
 ```sh
 $ ./rna.py -o rna_out input1.txt input2.txt
 Done, wrote 3 sequences in 2 files to directory "rna_out".
 ```
 
-Cada archivo de salida contendrá las secuencias de ARN transcritas correspondientes a las secuencias de ADN de los archivos de entrada.
+Each output file will contain the transcribed RNA sequences corresponding to the DNA sequences in the input files.
 
-## Ejemplo de Uso
+---
 
-Para ejecutar el programa y transcribir las secuencias de ADN en uno o más archivos de entrada:
+## Usage Example
+
+To run the program and transcribe the DNA sequences in one or more input files:
 
 ```sh
 $ ./rna.py --out_dir rna tests/inputs/*
 Done, wrote 5 sequences in 3 files to directory "rna".
 ```
 
-Esto creará un archivo de salida en el directorio `rna` para cada archivo de entrada con las secuencias de ARN transcritas.
+This will create an output file in the `rna` directory for each input file with the transcribed RNA sequences.
 
 ---
