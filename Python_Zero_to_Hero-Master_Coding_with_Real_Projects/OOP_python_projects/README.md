@@ -1,93 +1,93 @@
-# Proyectos de Python Orientado a Objetos (OOP)  
+# Python Projects - Object-Oriented Programming (OOP)
 
-Este documento proporciona una descripción detallada de dos proyectos desarrollados con Programación Orientada a Objetos en Python: **Sistema de Biblioteca** y **Sistema Bancario**.  
-
----
-
-## [1. Sistema de Biblioteca](./biblioteca.py) 
-
-### Descripción  
-Este proyecto simula el funcionamiento de una biblioteca, permitiendo a los usuarios **retirar y devolver libros**, así como gestionar cuentas y transacciones.  
-
-### Clases y Métodos  
-
-#### **Clase `Transaction`**  
-Representa una transacción de préstamo o devolución de un libro.  
-- **Atributos:**  
-  - `book` (str): Título del libro.  
-  - `transaction_type` (str): Tipo de transacción ("prestado" o "depositado").  
-- **Métodos:**  
-  - `__init__(self, book, transaction_type)`: Constructor de la clase.  
-
-#### **Clase `Library`**  
-Representa la biblioteca con un sistema de préstamos y devoluciones.  
-- **Atributos:**  
-  - `accounts` (dict): Diccionario de usuarios y sus libros prestados.  
-  - `inventory` (list): Lista de libros disponibles.  
-  - `transactions` (dict): Historial de transacciones de cada usuario.  
-- **Métodos:**  
-  - `withdrawal(self, book, holder_name)`: Retira un libro de la biblioteca.  
-  - `deposit(self, book, holder_name)`: Devuelve un libro a la biblioteca.  
-  - `inventorio(self)`: Muestra el inventario disponible.  
-  - `display_transactions(self, holder_name)`: Muestra el historial de transacciones de un usuario.  
-  - `contenido(self, holder_name)`: Lista los libros prestados a un usuario.  
-  - `create_account(self, holder_name)`: Crea una cuenta de usuario.  
-
-#### **Función `menu()`**  
-Permite la interacción del usuario con la biblioteca, incluyendo:  
-1. Creación de cuenta.
-2. Acceso a una cuenta existente.
-3. Depósito y préstamo de libros.
-4. Consulta del historial de transacciones.
-5. Visualización del inventario de la biblioteca.
-6. Visualización de libros prestados.
-7. Salida de la cuenta y del sistema de la biblioteca.
+This document provides a detailed description of two projects developed using Object-Oriented Programming in Python: **Library System** and **Banking System**.
 
 ---
 
-## [2. Sistema Bancario](./sistema_bancario.py)
+## [1. Library System](./biblioteca.py)
 
-### Descripción  
-Este proyecto simula un sistema bancario en Python, donde los usuarios pueden **crear cuentas, realizar depósitos y retiros, y consultar su historial de transacciones**.  
+### Description
+This project simulates the functioning of a library, allowing users to **borrow and return books** as well as manage accounts and transactions.
 
-### Clases y Métodos  
+### Classes and Methods
 
-#### **Clase `Transaction`**  
-Representa una transacción bancaria.  
-- **Atributos:**  
-  - `amount` (float): Cantidad de la transacción.  
-  - `transaction_type` (str): Tipo de transacción ("Depósito" o "Retiro").  
-- **Métodos:**  
-  - `__init__(self, amount, transaction_type)`: Constructor de la clase.  
+#### **Class `Transaction`**
+Represents a transaction for borrowing or returning a book.  
+- **Attributes:**  
+  - `book` (str): Title of the book.  
+  - `transaction_type` (str): Type of transaction ("borrowed" or "returned").  
+- **Methods:**  
+  - `__init__(self, book, transaction_type)`: Class constructor.  
 
-#### **Clase `Account`**  
-Representa una cuenta bancaria.  
-- **Atributos:**  
-  - `account_number` (int): Número de cuenta.  
-  - `holder_name` (str): Nombre del titular.  
-  - `balance` (float): Saldo de la cuenta.  
-  - `transactions` (list): Lista de transacciones.  
-- **Métodos:**  
-  - `deposit(self, amount)`: Deposita dinero en la cuenta.  
-  - `withdraw(self, amount)`: Retira dinero de la cuenta.  
-  - `display_transactions(self)`: Muestra el historial de transacciones.  
-  - `display_balance(self)`: Muestra el saldo de la cuenta.  
+#### **Class `Library`**
+Represents the library with a system for borrowing and returning books.  
+- **Attributes:**  
+  - `accounts` (dict): Dictionary of users and their borrowed books.  
+  - `inventory` (list): List of available books.  
+  - `transactions` (dict): Transaction history for each user.  
+- **Methods:**  
+  - `withdrawal(self, book, holder_name)`: Borrows a book from the library.  
+  - `deposit(self, book, holder_name)`: Returns a book to the library.  
+  - `inventorio(self)`: Displays the available inventory.  
+  - `display_transactions(self, holder_name)`: Displays the transaction history for a user.  
+  - `contenido(self, holder_name)`: Lists the books borrowed by a user.  
+  - `create_account(self, holder_name)`: Creates a user account.  
 
-#### **Clase `Bank`**  
-Administra múltiples cuentas bancarias.  
-- **Atributos:**  
-  - `accounts` (dict): Diccionario de cuentas bancarias.  
-- **Métodos:**  
-  - `create_account(self, account_number, holder_name, initial_balance=0)`: Crea una nueva cuenta.  
-  - `get_account(self, account_number)`: Obtiene una cuenta existente.  
+#### **Function `menu()`**
+Enables user interaction with the library, including:  
+1. Account creation.
+2. Accessing an existing account.
+3. Book borrowing and returning.
+4. Checking transaction history.
+5. Viewing the library's inventory.
+6. Viewing borrowed books.
+7. Exiting the account and library system.
 
-#### **Función `menu()`**  
-Permite la interacción del usuario con el banco, incluyendo:  
-1. Creación de cuenta.
-2. Acceso a una cuenta existente.
-3. Depósito y retiro de dinero.
-4. Consulta del historial de transacciones.
-5. Visualización del saldo.
-6. Salida del sistema.
+---
 
- ---
+## [2. Banking System](./sistema_bancario.py)
+
+### Description
+This project simulates a banking system in Python, where users can **create accounts, make deposits and withdrawals, and check their transaction history**.
+
+### Classes and Methods
+
+#### **Class `Transaction`**
+Represents a banking transaction.  
+- **Attributes:**  
+  - `amount` (float): Transaction amount.  
+  - `transaction_type` (str): Type of transaction ("Deposit" or "Withdrawal").  
+- **Methods:**  
+  - `__init__(self, amount, transaction_type)`: Class constructor.  
+
+#### **Class `Account`**
+Represents a bank account.  
+- **Attributes:**  
+  - `account_number` (int): Account number.  
+  - `holder_name` (str): Account holder's name.  
+  - `balance` (float): Account balance.  
+  - `transactions` (list): List of transactions.  
+- **Methods:**  
+  - `deposit(self, amount)`: Deposits money into the account.  
+  - `withdraw(self, amount)`: Withdraws money from the account.  
+  - `display_transactions(self)`: Displays the transaction history.  
+  - `display_balance(self)`: Displays the account balance.  
+
+#### **Class `Bank`**
+Manages multiple bank accounts.  
+- **Attributes:**  
+  - `accounts` (dict): Dictionary of bank accounts.  
+- **Methods:**  
+  - `create_account(self, account_number, holder_name, initial_balance=0)`: Creates a new account.  
+  - `get_account(self, account_number)`: Retrieves an existing account.  
+
+#### **Function `menu()`**
+Enables user interaction with the bank, including:  
+1. Account creation.
+2. Accessing an existing account.
+3. Depositing and withdrawing money.
+4. Checking transaction history.
+5. Viewing account balance.
+6. Exiting the system.
+
+---
