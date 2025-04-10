@@ -1,12 +1,14 @@
 # Project 8: Finding a Motif in DNA
 
-## Descripción
+## Description
 
-Este proyecto de Python tiene como propósito encontrar subsecuencias dentro de una secuencia dada, superando el desafío de Rosalind ["Finding a Motif in DNA"](https://rosalind.info/problems/subs/). El programa toma como entrada una secuencia y una subsecuencia, y encuentra todas las posiciones en las que la subsecuencia aparece dentro de la secuencia principal. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+This Python project aims to find subsequences within a given sequence, addressing the Rosalind challenge ["Finding a Motif in DNA"](https://rosalind.info/problems/subs/). The program takes a sequence and a subsequence as input and finds all the positions where the subsequence appears in the main sequence. The goal is to follow the instructions from the book *Mastering Python for Bioinformatics*, as outlined below:
 
-## Instrucciones
+---
 
-Crea un programa llamado `subs.py` que aceptará una secuencia y una subsecuencia como argumentos posicionales. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+## Instructions
+
+Create a program called `subs.py` that accepts a sequence and a subsequence as positional arguments. The program should print a usage statement for the flags `-h` or `--help`:
 
 ```sh
 $ ./subs.py -h
@@ -22,33 +24,42 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
-## Entradas del Programa
+---
 
-El archivo `subs.py` acepta como input:
+## Program Inputs
 
-1. **Secuencia principal (argumento posicional)**
-2. **Subsecuencia (argumento posicional)**
+The file `subs.py` accepts the following inputs:
+
+1. **Main sequence (positional argument)**
+2. **Subsequence (positional argument)**
 
 ```sh
 $ ./subs.py GATATATGCATATACTT ATAT
 ```
 
-## Salida del Programa
+---
 
-El programa imprimirá las posiciones en las que se encuentra la subsecuencia dentro de la secuencia principal:
+## Program Output
+
+The program will print the positions where the subsequence is found within the main sequence:
 
 ```sh
 $ ./subs.py GATATATGCATATACTT ATAT
 2 4 10
 ```
 
-## Ejemplo de Uso
+---
 
-Para ejecutar el programa y encontrar todas las posiciones en las que aparece una subsecuencia dentro de una secuencia principal:
+## Usage Example
+
+To run the program and find all positions where a subsequence appears in a main sequence:
 
 ```sh
 $ ./subs.py TCGAAACCAGAGATCACCTGAAAACCAGCCAGAAACCAGTCAAACCAGGGCGTAAACCAGTCAAAACCAGAAACCAGCGTAAACCAGAAACCAGTTTAAAACCAGAAACCAGATAAACCAGGTCAGAAACCAGCATCAAACCAGAAACCAGAAACCAGCCCTTAAACCAGAAACCAGAAAACCAGCGCAAAACCAGTGAAAACCAGGAAACCAGAAACCAGCTCAAAACCAGAAAAACCAGAAACCAGAAACCAGTAAAACCAGCCGTAAACCAGCTAAACCAGAAAACCAGCTACAAACCAGAAACCAGCAAACCAGCAATGAAAACCAGACCAGAAACCAGCTAAAAACCAGGAGAGAAACCAGTAAACCAGAGCTTAAACCAGAAAACCAGAAACCAGTCAAACCAGAAAACCAGCAAACCAGATTGAAAACCAGAAACCAGCAAAACCAGGAAACCAGTAGATTGAAACCAGAAACCAGACTTATACAAACCAGTACATGGGCTCTAACAAACCAGCCTATGGCTGTGTGGATAAACCAGAAACCAGAATAAACCAGGGGCCAAACCAGGCGTAAACCAGGCTGAAACCAGAAACCAGAAACCAGCAAAACCAGCCGTTTTGCTCGAAACCAGGAAAACCAGAAACCAGCCAATAAACCAGAAACCAGGGAAACCAGGGCAAAACCAGTAAACCAGGCATAAACCAGCCCCGAAAAACCAGTTCTTAAACCAGGATCGATAAAACCAGTATAAAACCAGGAGTAAACCAGGAAACCAGGGACAAACCAGCTAAACCAGGTGAAACCAGGAAACCAGAAACCAGACTTAAACCAGGAAACCAGGTATGAAACCAGTAAAAACCAGGGAAAACCAGAAACCAGAAACCAGCCTAAACCAGTAAACCAGAAACCAGGAAACCAGAGAAACCAG AAACCAGAA
 64 81 99 138 145 164 171 208 226 235 242 278 297 380 388 404 432 470 538 545 589 596 640 659 814 872 879 904
 ```
 
+This will output all the positions in the sequence where the subsequence is found.
+
 ---
+
