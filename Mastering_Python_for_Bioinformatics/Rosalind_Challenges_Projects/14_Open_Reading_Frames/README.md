@@ -1,12 +1,14 @@
 # Project 14: Open Reading Frames
 
-## Descripción
+## Description
 
-Este proyecto de Python tiene como propósito identificar marcos de lectura abiertos (ORFs, por sus siglas en inglés) en secuencias de ADN, superando el desafío de Rosalind ["Open Reading Frames"](https://rosalind.info/problems/orf/). El programa toma como entrada un archivo en formato FASTA con secuencias de ADN y encuentra todos los ORFs en las cadenas de ARN y sus complementos reversos. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+This Python project aims to identify Open Reading Frames (ORFs) in DNA sequences, addressing the Rosalind challenge ["Open Reading Frames"](https://rosalind.info/problems/orf/). The program takes a FASTA-formatted DNA sequence file as input and finds all ORFs in RNA strands and their reverse complements. The goal is to follow the guidelines from the book *Mastering Python for Bioinformatics*, as outlined below:
 
-## Instrucciones
+---
 
-Crea un programa llamado `orf.py` que aceptará un archivo FASTA como argumento posicional. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+## Instructions
+
+Create a program called `orf.py` that accepts a FASTA file as a positional argument. The program should print a usage statement for the flags `-h` or `--help`:
 
 ```sh
 $ ./orf.py -h
@@ -21,11 +23,13 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
-## Entradas del Programa
+---
 
-El archivo `orf.py` acepta como input:
+## Program Inputs
 
-1. **Archivo FASTA con secuencias de ADN (argumento posicional)**
+The file `orf.py` accepts the following input:
+
+1. **FASTA file with DNA sequences (positional argument)**
 
 ```sh
 $ cat tests/inputs/1.fa
@@ -34,9 +38,11 @@ AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTC\
 TTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG
 ```
 
-## Salida del Programa
+---
 
-El programa imprimirá todos los marcos de lectura abiertos (ORFs) encontrados en las secuencias del archivo FASTA:
+## Program Output
+
+The program will print all Open Reading Frames (ORFs) found in the DNA sequences of the FASTA file:
 
 ```sh
 $ ./orf.py tests/inputs/input.fasta
@@ -44,9 +50,11 @@ MKTIIALSYIFCLVFA
 MGSQGGISAG
 ```
 
-## Ejemplo de Uso
+---
 
-Para ejecutar el programa y localizar marcos de lectura abiertos en un archivo FASTA:
+## Usage Example
+
+To run the program and locate Open Reading Frames in a FASTA file:
 
 ```sh
 $ ./orf.py tests/inputs/1.fa
@@ -57,3 +65,4 @@ MTPRLGLESLLE
 ```
 
 ---
+
