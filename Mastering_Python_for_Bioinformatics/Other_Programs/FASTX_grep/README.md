@@ -1,12 +1,14 @@
 # Project: Grep through FASTX files
 
-## Descripción
+## Description
 
-Este proyecto de Python tiene como propósito buscar patrones en archivos FASTX, proporcionando una funcionalidad similar a la del comando `grep`. El programa toma como entrada uno o más archivos FASTX (FASTA o FASTQ) y un patrón de búsqueda, y genera una salida con las secuencias que coinciden con el patrón. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+This Python project aims to search for patterns in FASTX files, providing functionality similar to the `grep` command. The program takes one or more FASTX files (FASTA or FASTQ) and a search pattern as input and outputs sequences matching the pattern. The goal of this project is to follow the guidelines from the book *Mastering Python for Bioinformatics*, as outlined below:
 
-## Instrucciones
+---
 
-Crea un programa llamado `fastx_grep.py` que aceptará un patrón de búsqueda, uno o más archivos FASTX, y otros argumentos opcionales. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+## Instructions
+
+Create a program called `fastx_grep.py` that accepts a search pattern, one or more FASTX files, and additional optional arguments. The program should print a usage statement for the flags `-h` or `--help`:
 
 ```sh
 $ ./fastx_grep.py -h
@@ -27,28 +29,35 @@ optional arguments:
   -i, --insensitive    Case-insensitive search
 ```
 
-## Entradas del Programa
+---
 
-El archivo `fastx_grep.py` acepta como input:
+## Program Inputs
 
-1. **Patrón de búsqueda (argumento posicional)**
-2. **Uno o más archivos FASTX (argumento posicional)**
-3. **Formato de archivo de entrada (argumento opcional)**
-4. **Formato de archivo de salida (argumento opcional)**
-5. **Archivo de salida (argumento opcional)**
-6. **Búsqueda insensible a mayúsculas/minúsculas (argumento opcional)**
+The file `fastx_grep.py` accepts the following inputs:
+
+1. **Search pattern (positional argument)**
+2. **One or more FASTX files (positional argument)**
+3. **Input file format (optional argument)**
+4. **Output file format (optional argument)**
+5. **Output file (optional argument)**
+6. **Case-insensitive search (optional argument)**
 
 ```sh
-$ ./fastx_grep.py -i  "pattern" input.f[aq] -f fasta -O fasta -o output
+$ ./fastx_grep.py -i "pattern" input.f[aq] -f fasta -O fasta -o output
 ```
 
-## Salida del Programa
+---
 
-El programa imprimirá las secuencias que coinciden con el patrón de búsqueda en el formato especificado
+## Program Output
 
-## Ejemplo de Uso
+The program will print the sequences matching the search pattern in the specified output format.
 
-Para ejecutar el programa y buscar un patrón en uno o más archivos FASTX, teniendo como archivo de entrada:
+---
+
+## Usage Example
+
+To run the program and search for a pattern in one or more FASTX files, with the following input file:
+
 ```sh
 $ cat lsu.fa
 >ITSLSUmock2p.ITS_M01380:138:000000000-C9GKM:1:1101:14440:2042 2:N:0
@@ -65,8 +74,16 @@ TACCGGCCCAGCCACCCGTCTTCACCTTCGGCGTTCCTGTAGATATCTACGCATTTCACC
 GCTACACCTACAGTTCCGGTGGCGCCTACCGGCCTCAAGAAACGCAGTATGCCCAGCTAT
 T
 ```
+
+Running the program with:
+
 ```sh
 $ ./fastx_grep.py -i mo1380 tests/inputs/lsu.fa
+```
+
+Will output:
+
+```sh
 >ITSLSUmock2p.ITS_M01380:138:000000000-C9GKM:1:1101:14440:2042 2:N:0
 CAAGTTACTTCCTCTAAATGACCAAGCCTAGTGTAGAACCATGTCGTCAGTGTCAGTCTG
 AGTGTAGATCTCGGTGGTCGCCGTATCATTAAAAAAAAAAATGTAATACTACTAGTAATT
