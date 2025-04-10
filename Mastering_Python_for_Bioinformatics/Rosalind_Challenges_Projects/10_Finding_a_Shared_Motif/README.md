@@ -1,12 +1,14 @@
 # Project 10: Finding a Shared Motif
 
-## Descripción
+## Description
 
-Este proyecto de Python tiene como propósito encontrar la subcadena común más larga entre varias secuencias, superando el desafío de Rosalind ["Finding a Shared Motif"](https://rosalind.info/problems/lcsm/). El programa toma como entrada un archivo en formato FASTA con secuencias y encuentra la subcadena más larga que se encuentra en todas las secuencias. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+This Python project aims to find the longest common substring among multiple sequences, addressing the Rosalind challenge ["Finding a Shared Motif"](https://rosalind.info/problems/lcsm/). The program takes a FASTA-formatted file with sequences as input and identifies the longest substring shared by all sequences. The goal is to follow the guidelines from the book *Mastering Python for Bioinformatics*, as outlined below:
 
-## Instrucciones
+---
 
-Crea un programa llamado `lcsm.py` que aceptará un archivo FASTA como argumento posicional. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+## Instructions
+
+Create a program called `lcsm.py` that accepts a FASTA file as a positional argument. The program should print a usage statement for the flags `-h` or `--help`:
 
 ```sh
 $ ./lcsm.py -h
@@ -21,11 +23,13 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
-## Entradas del Programa
+---
 
-El archivo `lcsm.py` acepta como input:
+## Program Inputs
 
-1. **Archivo FASTA con secuencias (argumento posicional)**
+The file `lcsm.py` accepts the following input:
+
+1. **FASTA file with sequences (positional argument)**
 
 ```sh
 $ cat tests/inputs/1.fa
@@ -37,22 +41,27 @@ TAGACCA
 ATACA
 ```
 
-## Salida del Programa
+---
 
-El programa imprimirá la subcadena común más larga encontrada en todas las secuencias del archivo FASTA:
+## Program Output
+
+The program will print the longest common substring found across all sequences in the FASTA file:
 
 ```sh
 $ ./lcsm.py tests/inputs/input.fasta
 AGGTAC
 ```
 
-## Ejemplo de Uso
+---
 
-Para ejecutar el programa y encontrar la subcadena común más larga entre varias secuencias en un archivo FASTA:
+## Usage Example
+
+To run the program and find the longest common substring among multiple sequences in a FASTA file:
 
 ```sh
 $ ./lcsm.py tests/inputs/1.fa
-# En este caso, el programa puede imprimir estas cadenas, puesto que son las más largas: CA ó AC ó TA
+# In this case, the program may output any of the longest substrings found, such as: CA, AC, or TA
 ```
 
 ---
+
