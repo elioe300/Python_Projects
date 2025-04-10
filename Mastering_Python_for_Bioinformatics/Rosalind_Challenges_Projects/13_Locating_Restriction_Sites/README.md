@@ -1,12 +1,14 @@
 # Project 13: Locating Restriction Sites
 
-## Descripción
+## Description
 
-Este proyecto de Python tiene como propósito identificar sitios de restricción en secuencias de ADN, superando el desafío de Rosalind ["Locating Restriction Sites"](https://rosalind.info/problems/revp/). El programa toma como entrada un archivo en formato FASTA con secuencias de ADN y encuentra todas las secuencias palindrómicas dentro de un rango de tamaños. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+This Python project aims to identify restriction sites in DNA sequences, addressing the Rosalind challenge ["Locating Restriction Sites"](https://rosalind.info/problems/revp/). The program takes a FASTA-formatted DNA sequence file as input and finds all palindromic sequences within a specified size range. The goal is to follow the guidelines from the book *Mastering Python for Bioinformatics*, as outlined below:
 
-## Instrucciones
+---
 
-Crea un programa llamado `revp.py` que aceptará un archivo FASTA como argumento posicional. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+## Instructions
+
+Create a program called `revp.py` that accepts a FASTA file as a positional argument. The program should print a usage statement for the flags `-h` or `--help`:
 
 ```sh
 $ ./revp.py -h
@@ -21,11 +23,13 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
-## Entradas del Programa
+---
 
-El archivo `revp.py` acepta como input:
+## Program Inputs
 
-1. **Archivo FASTA con secuencias de ADN (argumento posicional)**
+The file `revp.py` accepts the following input:
+
+1. **FASTA file with DNA sequences (positional argument)**
 
 ```sh
 $ cat tests/inputs/1.fa
@@ -33,9 +37,11 @@ $ cat tests/inputs/1.fa
 TCAATGCATGCGGGTCTATATGCAT
 ```
 
-## Salida del Programa
+---
 
-El programa imprimirá las posiciones y longitudes de las secuencias palindrómicas encontradas en las secuencias del archivo FASTA:
+## Program Output
+
+The program will print the positions and lengths of palindromic sequences found in the FASTA file:
 
 ```sh
 $ ./revp.py tests/inputs/input.fasta
@@ -44,9 +50,11 @@ $ ./revp.py tests/inputs/input.fasta
 3 8
 ```
 
-## Ejemplo de Uso
+---
 
-Para ejecutar el programa y localizar sitios de restricción en un archivo FASTA:
+## Usage Example
+
+To run the program and locate restriction sites in a FASTA file:
 
 ```sh
 $ ./revp.py tests/inputs/1.fa
