@@ -1,12 +1,14 @@
 # Project 12: Inferring mRNA from Protein
 
-## Descripción
+## Description
 
-Este proyecto de Python tiene como propósito inferir la secuencia de mRNA a partir de una secuencia de proteínas, superando el desafío de Rosalind ["Inferring mRNA from Protein"](https://rosalind.info/problems/mrna/). El programa toma como entrada una secuencia de proteínas y calcula el número de posibles secuencias de mRNA que podrían haberla codificado. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+This Python project aims to infer the mRNA sequence from a protein sequence, addressing the Rosalind challenge ["Inferring mRNA from Protein"](https://rosalind.info/problems/mrna/). The program takes a protein sequence as input and calculates the number of possible mRNA sequences that could have encoded it. The goal is to follow the guidelines from the book *Mastering Python for Bioinformatics*, as detailed below:
 
-## Instrucciones
+---
 
-Crea un programa en Python llamado `mrna.py` que acepte una secuencia de proteína como un argumento posicional o un nombre de archivo junto con un argumento opcional "módulo" que por defecto sea 1,000,000.. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+## Instructions
+
+Create a Python program called `mrna.py` that accepts a protein sequence as a positional argument or a filename, along with an optional "modulo" argument with a default value of 1,000,000. The program should print a usage statement for the flags `-h` or `--help`:
 
 ```sh
 $ ./mrna.py -h
@@ -23,29 +25,36 @@ optional arguments:
                    Modulo value (default: 1000000)
 ```
 
-## Entradas del Programa
+---
 
-El archivo `mrna.py` acepta como input:
+## Program Inputs
 
-1. **Secuencia de proteínas o archivo que contiene la secuencia de proteínas (argumento posicional)**
+The file `mrna.py` accepts the following inputs:
+
+1. **Protein sequence or a file containing the protein sequence (positional argument)**:
 ```sh
 $ cat 1.txt
 MSVHDQCHHQLSFSMMECLLPRSEHTRMEWKTWDVVVWMPRRWPWGPSRDKTCIYAHTCMQGKDPIFHRIIP
 ```
-2. **Valor de módulo opcional (argumento opcional)**
 
-## Salida del Programa
+2. **Optional modulo value (optional argument)**
 
-El programa imprimirá el número de posibles secuencias de mRNA que podrían haber codificado la secuencia de proteínas proporcionada, utilizando el valor de módulo opcional:
+---
+
+## Program Output
+
+The program will print the number of possible mRNA sequences that could have coded for the provided protein sequence, using the optional modulo value:
 
 ```sh
 $ ./mrna.py -m 1000000 MYPROTEIN
 196608
 ```
 
-## Ejemplo de Uso
+---
 
-Para ejecutar el programa y calcular el número de posibles secuencias de mRNA:
+## Usage Example
+
+To run the program and calculate the number of possible mRNA sequences:
 
 ```sh
 $ ./mrna.py MA
