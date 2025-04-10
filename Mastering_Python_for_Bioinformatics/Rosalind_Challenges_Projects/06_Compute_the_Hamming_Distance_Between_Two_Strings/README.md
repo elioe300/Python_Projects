@@ -1,12 +1,14 @@
 # Project 6: Compute the Hamming Distance Between Two Strings
 
-## Descripción
+## Description
 
-Este proyecto de Python tiene como propósito calcular la distancia de Hamming entre dos secuencias de ADN, superando el desafío de Rosalind ["Compute the Hamming Distance Between Two Strings"](https://rosalind.info/problems/ba1g/). El programa toma dos argumentos posicionales, las cuáles serán dos líneas de secuencias de ADN y que imprimirá la distancia de Hamming entre ellas. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+This Python project calculates the Hamming distance between two DNA sequences, addressing the Rosalind challenge ["Compute the Hamming Distance Between Two Strings"](https://rosalind.info/problems/ba1g/). The program takes two positional arguments, which are two DNA sequence strings, and prints the Hamming distance between them. The objective is to follow the guidelines from the book *Mastering Python for Bioinformatics*, as outlined below:
 
-## Instrucciones
+---
 
-Crea un programa llamado `hamm.py` que aceptará dos secuencias de ADN como argumentos posicionales. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+## Instructions
+
+Create a program called `hamm.py` that accepts two DNA sequences as positional arguments. The program should print a usage statement for the flags `-h` or `--help`:
 
 ```sh
 $ ./hamm.py -h
@@ -22,28 +24,35 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
-## Entradas del Programa
+---
 
-El archivo `hamm.py` acepta como input:
+## Program Inputs
 
-1. **Dos secuencias de ADN (argumentos posicionales)**
+The file `hamm.py` accepts the following inputs:
+
+1. **Two DNA sequences (positional arguments)**
 ```sh
 $ cat tests/inputs/1.txt
 GAGCCTACTAACGGGAT
 CATCGTAATGACGGCCT
 ```
-## Salida del Programa
 
-El programa imprimirá la distancia de Hamming entre las dos secuencias de ADN proporcionadas:
+---
+
+## Program Output
+
+The program will print the Hamming distance between the two provided DNA sequences:
 
 ```sh
 $ ./hamm.py GAGCCTACTAACGGGAT CATCGTAATGACGGCCT
 7
 ```
 
-## Ejemplo de Uso
+---
 
-Para ejecutar el programa y calcular la distancia de Hamming entre dos secuencias de ADN:
+## Usage Example
+
+To execute the program and calculate the Hamming distance between two DNA sequences:
 
 ```sh
 $ ./hamm.py GAGCCTACTAACGGGAT CATCGTAATGACGGCCT
