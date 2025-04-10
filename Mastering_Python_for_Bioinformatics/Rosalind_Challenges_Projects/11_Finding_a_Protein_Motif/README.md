@@ -1,12 +1,14 @@
 # Project 11: Finding a Protein Motif
 
-## Descripción
+## Description
 
-Este proyecto de Python tiene como propósito encontrar las ubicaciones del motivo de N-glicosilación en secuencias de proteínas, superando el desafío de Rosalind ["Finding a Protein Motif"](https://rosalind.info/problems/mprt/). El programa toma como entrada un archivo de texto con IDs de UniProt, descarga los archivos FASTA correspondientes y busca motivos de N-glicosilación en las secuencias de proteínas. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+This Python project aims to find the locations of the N-glycosylation motif in protein sequences, addressing the Rosalind challenge ["Finding a Protein Motif"](https://rosalind.info/problems/mprt/). The program takes a text file with UniProt IDs as input, downloads the corresponding FASTA files, and searches for N-glycosylation motifs in the protein sequences. The goal of this project is to follow the guidelines from the book *Mastering Python for Bioinformatics*, as detailed below:
 
-## Instrucciones
+---
 
-Crea un programa llamado `mprt.py` que aceptará un archivo de texto con IDs de UniProt como argumento posicional y un directorio de descarga opcional. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+## Instructions
+
+Create a program called `mprt.py` that accepts a text file of UniProt IDs as a positional argument and an optional download directory. The program should print a usage statement for the flags `-h` or `--help`:
 
 ```sh
 $ ./mprt.py -h
@@ -23,11 +25,13 @@ optional arguments:
               Directory to download FASTA files (default: fasta)
 ```
 
-## Entradas del Programa
+---
 
-El archivo `mprt.py` acepta como input:
+## Program Inputs
 
-1. **Archivo de texto con IDs de UniProt (argumento posicional)**
+The file `mprt.py` accepts the following inputs:
+
+1. **Text file with UniProt IDs (positional argument)**:
 ```sh
 $ cat tests/inputs/1.txt
 A2Z669
@@ -35,12 +39,13 @@ B5ZC00
 P07204
 P20840
 ```
-2. **Directorio de descarga opcional (argumento opcional)**
+2. **Optional download directory (optional argument)**
 
+---
 
-## Salida del Programa
+## Program Output
 
-El programa imprimirá los IDs de UniProt y las posiciones de los motivos de N-glicosilación encontrados en las secuencias de proteínas:
+The program will print the UniProt IDs and the positions of the N-glycosylation motifs found in the protein sequences:
 
 ```sh
 $ ./mprt.py tests/inputs/1.txt
@@ -52,9 +57,11 @@ P20840
 79 109 135 248 306 348 364 402 485 501 614
 ```
 
-## Ejemplo de Uso
+---
 
-Es importante descargar el bash script para descargar los archivos FASTA, ejecutar el programa y encontrar las ubicaciones de los motivos de N-glicosilación en las secuencias de proteínas descargadas:
+## Usage Example
+
+To download the FASTA files, execute the program, and find the locations of N-glycosylation motifs in the downloaded protein sequences:
 
 ```sh
 $ ./mprt.py tests/inputs/2.txt
