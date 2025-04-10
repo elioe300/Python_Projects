@@ -1,12 +1,14 @@
 # Project 9: Overlap Graphs
 
-## Descripción
+## Description
 
-Este proyecto de Python tiene como propósito crear un grafo a través de secuencias, superando el desafío de Rosalind ["Overlap Graphs"](https://rosalind.info/problems/grph/). El programa toma como entrada un archivo en formato FASTA con secuencias y un tamaño de solapamiento como argumento opcional. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+This Python project aims to create a graph using sequences, tackling the Rosalind challenge ["Overlap Graphs"](https://rosalind.info/problems/grph/). The program takes a FASTA-formatted file with sequences as input and an optional overlap size as an argument. The goal of this project is to follow the guidelines from the book *Mastering Python for Bioinformatics*, as outlined below:
 
-## Instrucciones
+---
 
-Crea un programa llamado `graph.py` que aceptará un archivo FASTA como argumento posicional y un tamaño de solapamiento como argumento opcional. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+## Instructions
+
+Create a program called `graph.py` that accepts a FASTA file as a positional argument and an optional overlap size. The program should print a usage statement for the flags `-h` or `--help`:
 
 ```sh
 $ ./graph.py -h
@@ -24,11 +26,13 @@ optional arguments:
   -d, --debug           Enable debug mode
 ```
 
-## Entradas del Programa
+---
 
-El archivo `graph.py` acepta como input:
+## Program Inputs
 
-1. **Archivo FASTA con secuencias (argumento posicional)**
+The file `graph.py` accepts the following inputs:
+
+1. **FASTA file with sequences (positional argument)**:
 ```sh
 $ cat tests/inputs/1.fa
 >Rosalind_0498
@@ -42,15 +46,17 @@ AAATCCC
 >Rosalind_5013
 GGGTGGG
 ```
-3. **Tamaño de solapamiento (argumento opcional)**
 
+2. **Overlap size (optional argument)**:
 ```sh
 $ ./graph.py -k 3 tests/inputs/input.fasta
 ```
 
-## Salida del Programa
+---
 
-El programa imprimirá las aristas del grafo representando los solapamientos entre las secuencias:
+## Program Output
+
+The program will print the edges of the graph representing overlaps between the sequences:
 
 ```sh
 $ ./graph.py -k 3 tests/inputs/input.fasta
@@ -58,9 +64,11 @@ seq1 seq2
 seq3 seq4
 ```
 
-## Ejemplo de Uso
+---
 
-Para ejecutar el programa y crear un grafo a través de secuencias con un tamaño de solapamiento de 3:
+## Usage Example
+
+To run the program and create a graph using sequences with an overlap size of 3:
 
 ```sh
 $ ./grph.py tests/inputs/1.fa
