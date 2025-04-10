@@ -1,12 +1,14 @@
 # Project: Mimic seqmagick
 
-## Descripción
+## Description
 
-Este proyecto de Python tiene como propósito imitar la funcionalidad del programa `seqmagick`, proporcionando estadísticas sobre secuencias en archivos FASTA. El programa toma como entrada uno o más archivos FASTA y genera una tabla que muestra varias estadísticas sobre las secuencias en cada archivo. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+This Python project aims to mimic the functionality of the `seqmagick` program by providing statistics about sequences in FASTA files. The program takes one or more FASTA files as input and generates a table showing various statistics for the sequences in each file. The goal is to follow the guidelines from the book *Mastering Python for Bioinformatics*, as outlined below:
 
-## Instrucciones
+---
 
-Crea un programa llamado `seqmagique.py` que aceptará uno o más archivos FASTA como argumentos posicionales y un formato de tabla opcional. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+## Instructions
+
+Create a program called `seqmagique.py` that accepts one or more FASTA files as positional arguments and an optional table format. The program should print a usage statement for the flags `-h` or `--help`:
 
 ```sh
 $ ./seqmagique.py -h
@@ -26,17 +28,20 @@ optional arguments:
                                   'latex_booktabs']
 ```
 
-## Entradas del Programa
+---
 
-El archivo `seqmagique.py` acepta como input:
+## Program Inputs
 
-1. **Uno o más archivos FASTA (argumento posicional)**
-2. **Formato de tabla opcional (argumento opcional)**
+The file `seqmagique.py` accepts the following inputs:
 
+1. **One or more FASTA files (positional arguments)**
+2. **Optional table format (optional argument)**
 
-## Salida del Programa
+---
 
-El programa imprimirá una tabla con estadísticas sobre las secuencias en cada archivo FASTA:
+## Program Output
+
+The program will print a table with statistics about the sequences in each FASTA file:
 
 ```sh
 $ ./seqmagique.py tests/inputs/*.fa
@@ -46,9 +51,11 @@ tests/inputs/2.fa             49         79      64.00           5
 tests/inputs/empty.fa          0          0       0.00           0
 ```
 
-## Ejemplo de Uso
+---
 
-Para ejecutar el programa y generar una tabla con estadísticas de secuencias en uno o más archivos FASTA:
+## Usage Example
+
+To run the program and generate a table with sequence statistics for one or more FASTA files:
 
 ```sh
 $ ./seqmagique.py -t grid tests/inputs/file1.fasta tests/inputs/file2.fasta
