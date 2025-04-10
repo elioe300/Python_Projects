@@ -1,12 +1,14 @@
 # Project 7: Translating RNA into Protein
 
-## Descripción
+## Description
 
-Este proyecto de Python tiene como propósito traducir secuencias de ARN a secuencias de proteínas, superando el desafío de Rosalind ["Translating RNA into Protein"](https://rosalind.info/problems/prot/). El programa toma como entrada una secuencia de ARN y traduce esa secuencia a la correspondiente secuencia de proteínas utilizando el código genético estándar. El objetivo de este proyecto es seguir las instrucciones del libro "Mastering Python for Bioinformatics", las cuales son las siguientes:
+This Python project is designed to translate RNA sequences into protein sequences, addressing the Rosalind challenge ["Translating RNA into Protein"](https://rosalind.info/problems/prot/). The program takes an RNA sequence as input and translates it into the corresponding protein sequence using the standard genetic code. The goal is to follow the guidelines from the book *Mastering Python for Bioinformatics*, as outlined below:
 
-## Instrucciones
+---
 
-Crea un programa llamado `prot.py` que aceptará una secuencia de ARN como argumento posicional. El programa debe imprimir una declaración de "uso" para las banderas `-h` o `--help`:
+## Instructions
+
+Create a program called `prot.py` that accepts an RNA sequence as a positional argument. The program should print a usage statement for the flags `-h` or `--help`:
 
 ```sh
 $ ./prot.py -h
@@ -21,28 +23,34 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
-## Entradas del Programa
+---
 
-El archivo `prot.py` acepta como input:
+## Program Inputs
 
-1. **Secuencia de ARN (argumento posicional)**
+The file `prot.py` accepts the following input:
+
+1. **RNA sequence (positional argument)**
 
 ```sh
 $ ./prot.py AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUGACUGAAGGUUUGGGAUCCCG
 ```
 
-## Salida del Programa
+---
 
-El programa imprimirá la secuencia de proteínas traducida de la secuencia de ARN proporcionada:
+## Program Output
+
+The program will print the protein sequence translated from the provided RNA sequence:
 
 ```sh
 $ ./prot.py AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA
 MAMAPRTEINSTRING
 ```
 
-## Ejemplo de Uso
+---
 
-Para ejecutar el programa y traducir una secuencia de ARN a proteínas:
+## Usage Example
+
+To run the program and translate an RNA sequence into proteins:
 
 ```sh
 $ ./prot.py AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUGACUGAAGGUUUGGGAUCCCG
